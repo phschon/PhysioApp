@@ -1,0 +1,44 @@
+<mvc:View controllerName="sapcp.cf.strongpeople.physioapp.controller.CreatePatient" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" xmlns:semantic="sap.m.semantic" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<App>
+		<pages>
+			<Page title="New Patient">
+				<customHeader>
+					<Bar>
+						<contentLeft></contentLeft>
+						<contentMiddle>
+							<Label text="Patient Details" class="pageheadertextClass"/>
+						</contentMiddle>
+						<contentRight></contentRight>
+					</Bar>
+				</customHeader>
+				<content>
+					<f:SimpleForm id="createPatientDetails" visible="true" editable="true" layout="ResponsiveGridLayout" adjustLabelSpan="false" emptySpanL="6"
+						columnsL="1">
+						<f:content>
+							<Label text="ID" required="true" design="Bold"/>
+							<Input id="patientID" liveChange="onLiveChangeCreatePatientID" maxLength="3"/>
+							<Label text="Name" required="true" design="Bold"/>
+							<Input id="patientName" liveChange="onLiveChangeCreatePatientName" maxLength="15"/>
+							<Label text="Address" required="true" design="Bold"/>
+							<Input maxLength="10" id="patientAddress" liveChange="onLiveChangeCreatePatientAddress"/>
+							<Label text="Phone" required="true" design="Bold"/>
+							<Input id="patientPhone" liveChange="onLiveChangeCreatePatientPhone"/>
+							<Label text="Email" required="true" design="Bold"/>
+							<Input id="patientEmail" liveChange="onLiveChangeCreatePatientEmail"/>
+						</f:content>
+					</f:SimpleForm>
+				</content>
+				<footer id="Green">
+					<Bar>
+						<contentRight>
+							<Button id="patientCreateButton" icon="sap-icon://create-form" text="Create" type="Accept" enabled="true" press="createNewPatientDetails" visible="true"/>
+							<Button id="patientCloseButton" icon="sap-icon://cancel" text="Cancel" type="Reject" enabled="true" press="cancelNewPatientDetails" visible="true"/>
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
