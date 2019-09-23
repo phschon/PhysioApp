@@ -1,11 +1,11 @@
 <mvc:View controllerName="sapcp.cf.strongpeople.physioapp.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
 	<Shell id="shell">
-		<SplitApp id="app">
+		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content></content>
 				</Page>
 			</pages>
-		</SplitApp>
+		</App>
 	</Shell>
 </mvc:View>

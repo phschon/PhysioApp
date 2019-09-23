@@ -1,1 +1,1 @@
-Physio App for patiens and therapists
+Physio App for patients and therapists
