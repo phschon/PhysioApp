@@ -15,7 +15,7 @@ public class PhysioApiController implements PhysioApi {
 
 
 	private static final Log logger = LogFactory.getLog(PhysioConfig.class);
-	public ResponseEntity<String> getIasTenants(String param) {
+	public ResponseEntity<String> testEndpoint(String param) {
 
 		logger.info("Access test endpoint: " + param);
 		return new ResponseEntity<String>(param, HttpStatus.OK);

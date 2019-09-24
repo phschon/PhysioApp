@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 public interface PhysioApi {
+
 	@RequestMapping(value = { "/test/{param}" }, method = RequestMethod.GET)
-	ResponseEntity<String> getIasTenants(@PathVariable String param);
+	ResponseEntity<String> testEndpoint(@PathVariable String param);
 }
