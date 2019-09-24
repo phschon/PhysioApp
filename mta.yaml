@@ -31,6 +31,17 @@ modules:
       builder: grunt
       supported-platforms: []
       build-result: dist
+  - name: test123
+    type: java
+    path: test123
+    parameters:
+      memory: 512M
+    provides:
+      - name: test123_api
+        properties:
+          url: '${default-url}'
+    build-parameters:
+      build-result: 'target/*.jar'
 resources:
   - name: mta_physioapp1_html5_repo_runtime
     parameters:
