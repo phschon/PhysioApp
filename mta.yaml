@@ -31,17 +31,6 @@ modules:
       builder: grunt
       supported-platforms: []
       build-result: dist
-  - name: physioBackEnd
-    type: java
-    path: CF_ApplicationBackEnd
-    parameters:
-      memory: 1G
-    provides:
-      - name: physioBackend_api
-        properties:
-          url: '${default-url}'
-    build-parameters:
-      build-result: 'target/physioApp-executable.jar'
 resources:
   - name: mta_physioapp1_html5_repo_runtime
     parameters:
