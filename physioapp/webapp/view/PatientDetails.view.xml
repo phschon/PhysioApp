@@ -73,36 +73,6 @@
 					</MenuButton>
 				</cells>
 			</ColumnListItem>
-			<ColumnListItem>
-				<cells>
-					<Text text="101" />
-					<Text text="Matt" />
-					<Text text="Peter Boehm Strassee 4" />
-					<Text text="92675" />
-					<Text text="xyz@gmail.com" />
-					<Button text="Show diagnosis" press="showPatientDiagnosis"/>
-				</cells>
-			</ColumnListItem>
-			<ColumnListItem>
-				<cells>
-					<Text text="102" />
-					<Text text="Bjoern" />
-					<Text text="Peter Boehm Strassee 24" />
-					<Text text="7835673" />
-					<Text text="lmn@gmail.com" />
-					<Button text="Show diagnosis" press="showPatientDiagnosis"/>
-				</cells>
-			</ColumnListItem>
-			<ColumnListItem>
-				<cells>
-					<Text text="103" />
-					<Text text="Phillip" />
-					<Text text="Peter Boehm Strassee 11" />
-					<Text text="8237887" />
-					<Text text="mno@gmail.com" />
-					<Button text="Show details" press="showPatientDiagnosis"/>
-				</cells>
-			</ColumnListItem>
 		</items>
 	</Table>
 </mvc:View>
