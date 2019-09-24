@@ -16,6 +16,7 @@
       "description": "Admin user access"
     }
   ],
+  "authorities":["$XSAPPNAME.admin"],
   "role-templates": [
     {
       "name": "Patient",
