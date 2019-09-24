@@ -8,7 +8,7 @@
 				</headerContent>
 				<content>
 					<List>
-					  <StandardListItem type="Active" press="patientsPress" title="Patients"/>
+					  <StandardListItem type="Navigation" press="patientsPress" title="Patients"/>
 					</List>
 				</content>
 			</Page>

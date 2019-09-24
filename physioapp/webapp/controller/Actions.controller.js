@@ -9,7 +9,7 @@ sap.ui.define([
 		},
 		
 		patientsPress: function(oEvent) {
-			
+			this.oRouter.navTo("patientDetails");
 		},
 		
 		createPatientPress: function(oEvent) {
