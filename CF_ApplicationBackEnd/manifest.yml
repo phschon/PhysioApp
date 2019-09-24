@@ -1,0 +1,13 @@
+---
+applications:
+# The sample application.
+- name: physioBackend
+  instances: 1
+  memory: 1G
+  buildpacks:
+    - java_buildpack
+  routes:
+    - route: physiobackend.cfapps.eu10.hana.ondemand.com
+  services:
+    - uaa_mta_physioapp1
+  path: target/physioApp-executable.jar
