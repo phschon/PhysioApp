@@ -56,6 +56,10 @@
 				"settings": {
 					"bundleName": "sapcp.cf.strongpeople.physioapp.i18n.i18n"
 				}
+			},
+			"Videos": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/Videos.json"
 			}
 		},
 		"resources": {
@@ -106,6 +110,14 @@
 						"actions",
 						"patientDetails"
 					]
+				},
+				{
+					"name": "patientVideos",
+					"pattern": "category/actions/physio/patientDetails/patientVideos",
+					"target": [
+						"actions",
+						"patientVideos"
+					]
 				}
 			],
 			"targets": {
@@ -139,6 +151,12 @@
 					"viewType": "XML",
 					"viewLevel": 1,
 					"viewName": "PatientDetails",
+					"controlAggregation": "detailPages"
+				},
+				"patientVideos": {
+					"viewType": "XML",
+					"viewLevel": 2,
+					"viewName": "PatientVideos",
 					"controlAggregation": "detailPages"
 				}
 			}
