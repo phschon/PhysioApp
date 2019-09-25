@@ -10,4 +10,5 @@ applications:
     - route: physiobackend.cfapps.eu10.hana.ondemand.com
   services:
     - uaa_mta_physioapp1
-  path: target/physioApp-executable.jar
+    - bookshop-bookshop-db-hdi-container7efXd4/xEuBgOmiy
+  path: target/physioApp.jar

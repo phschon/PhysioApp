@@ -1,5 +1,6 @@
 package physio.database.entities;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.NotNull;
@@ -11,8 +12,8 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@MappedSuperclass
-public abstract class User {
+@Entity
+public class User {
 
 	@Id
 	@NotNull
@@ -20,6 +21,9 @@ public abstract class User {
 
 	@NotNull
 	String email;
+
+	@NotNull
+	String role;
 
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	private String firstName;

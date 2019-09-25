@@ -1,5 +1,7 @@
 package physio.database.entities;
 
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -11,11 +13,17 @@ import lombok.Setter;
 @Setter
 public class Exercise {
 
+	@Id
 	@NotNull
-	private String patient;
+	private String id;
+
+	@Id
+	@NotNull
+	@OneToMany(mappedBy="id", targetEntity=User.class)
+	private String patientId;
 
 	@NotNull
-	private String excerisePoolId;
+	private String exercisePoolId;
 
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	private String description;
