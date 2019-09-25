@@ -3,8 +3,11 @@ package physio.api;
 import java.io.IOException;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +19,7 @@ import physio.database.controller.UserRepository;
 import physio.database.entities.Therapist2Patient;
 import physio.database.entities.User;
 
-@Controller
+@Component
 public class DummyContent {
 
 	@Autowired
@@ -31,7 +34,7 @@ public class DummyContent {
 
 	private String t2p = "{\"therapist\": \"t1\", \"patient\": \"p1\"}";
 
-	@PostMapping("/initial")
+	@EventListener(ApplicationReadyEvent.class)
 	public ResponseEntity fill() throws IOException {
 		ObjectMapper mapper = new ObjectMapper();
 		User a = mapper.readValue(admin, User.class);
