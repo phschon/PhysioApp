@@ -33,7 +33,6 @@ public class ApiConfiguration extends WebSecurityConfigurerAdapter {
             .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
         .and()
             .authorizeRequests()
-            //.antMatchers("/hello-token/**").hasAuthority("Read") // checks whether it has scope "<xsappId>.Read"
             .antMatchers("/test/**").hasAuthority("admin")
             .anyRequest().denyAll()
         .and()
