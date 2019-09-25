@@ -8,6 +8,7 @@
       "description": "UAA"
     }
   ],
+  "authorities":["$XSAPPNAME.admin"],
   "role-templates": [
     {
       "name": "Token_Exchange",
