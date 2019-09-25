@@ -75,7 +75,7 @@
    "ID": "938d4ed0-d1c0-4686-ac40-861977083960",
    "Lang": "DE",
    "Type": "Übungsname",
-   "Content": "Stehen Bein seitlich"
+   "Content": "Stehen Bein seitlich 1"
  },
  {
    "ID": "6d12c802-702f-4b9d-8bce-e4d24cab43de",
@@ -87,10 +87,262 @@
    "ID": "3db032ef-711d-4b8c-b204-261d934024fa",
    "Lang": "DE",
    "Type": "Übungsname",
-   "Content": "Stehen Bein vor und zurück"
+   "Content": "Stehen Bein seitlich 2"
  },
  {
    "ID": "67ba6c2d-4be4-4798-a7b8-3d0e7261fc91",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "750fccd0-e862-4823-997d-9c592d3dbf9d",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 3"
+ },
+ {
+   "ID": "16ca5bcf-ee6b-488e-ba25-96c7ba622f56",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "fc9da8c7-c709-4e5b-9d61-8437c950901c",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 4"
+ },
+ {
+   "ID": "3e70cf6a-6b57-4994-a458-6131e0ffa7e2",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "d70a803b-48ec-40c4-9353-700e65bc2930",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 5"
+ },
+ {
+   "ID": "be701be8-f0d4-41b2-9ff7-9f3a83b7d99f",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "ef7611a9-d67d-46a3-a755-994b400d66f7",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 6"
+ },
+ {
+   "ID": "023ddb1b-7a3e-4235-9609-b59ecd84a161",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "113861a4-4330-4bc2-86df-6aa1c00e0e6f",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 7"
+ },
+ {
+   "ID": "6d5dc212-14b5-4d51-8a85-ad1153e7118a",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "fbd442e3-7160-4185-ba05-85f662554fbf",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 8"
+ },
+ {
+   "ID": "36df2a1b-51ed-4ab6-bc5a-b7fdbe75d6fb",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "56ddb19b-eb8a-4436-a85d-5ab86fc6fbc9",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 9"
+ },
+ {
+   "ID": "4a1623ac-b683-4b42-ba54-c90fd0e71b70",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "2857ebc9-e5e3-43f1-9d8c-d8490756ba90",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 10"
+ },
+ {
+   "ID": "f8f7aa95-6979-4ea6-970f-3c73227bfce0",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "b67af1f9-8dbf-409d-af51-563de868f32b",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 11"
+ },
+ {
+   "ID": "82985e19-9e2b-4d8a-97c8-79265d85f439",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "58a59911-df01-4df8-87d4-ca2d4554bb0a",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 12"
+ },
+ {
+   "ID": "5ef4f9b0-a656-4535-a3b8-2b24957df2eb",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "4ed98de5-08b9-4584-82d2-00b4d64d2bec",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 13"
+ },
+ {
+   "ID": "84f8266a-e36c-4ad5-84b3-8cfb6a1c882e",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "4e93d0a0-f58d-4dfe-8c16-cb0eaedde9d3",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 14"
+ },
+ {
+   "ID": "41d43676-f4b0-448b-b943-feb3a2420c51",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "c89943e0-4a52-4daf-bf21-61a9df185214",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 15"
+ },
+ {
+   "ID": "bd99e0a8-6b0e-4551-b894-d855a372002d",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "39793dfa-f807-429e-a42c-234273db8491",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 16"
+ },
+ {
+   "ID": "25a30162-f7cb-477d-9fe4-2734461c5306",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "ae5fcc53-cecc-4a67-b87c-098db56304cd",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 17"
+ },
+ {
+   "ID": "322151df-ffc9-4de0-a805-a5dc53d559dd",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "060500a0-63eb-4341-af9a-158123b5fcf5",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 18"
+ },
+ {
+   "ID": "003eaf8d-f6cb-47e0-8037-100f7663aa6a",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "60aafd86-3663-4b3b-ba6d-252b4810679f",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 19"
+ },
+ {
+   "ID": "3adf5a96-dcaf-45f1-a831-065b940751a8",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "c2db751f-3da8-4fd7-9584-db1e6511e51e",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 20"
+ },
+ {
+   "ID": "cd8a6fa4-a244-47ec-8e3c-2834f153d718",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "5575ee7c-bb8f-4490-b23b-dce3a9af9723",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 21"
+ },
+ {
+   "ID": "6250e5fe-5618-4543-a2f6-64dc4a4a7eb3",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "0ae9d269-9265-403d-8255-958778564dd8",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 22"
+ },
+ {
+   "ID": "38bdbcbd-2b72-4acf-ad01-823223d080a9",
+   "Lang": "DE",
+   "Type": "Übungsbeschreibung",
+   "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
+ },
+ {
+   "ID": "a8758cc5-039a-46ed-a34d-f38638b87f76",
+   "Lang": "DE",
+   "Type": "Übungsname",
+   "Content": "Stehen Bein seitlich 23"
+ },
+ {
+   "ID": "b5c6e1d8-516d-4024-90e5-71c18a22e8a1",
    "Lang": "DE",
    "Type": "Übungsbeschreibung",
    "Content": "1.\tFang an im Stehen.\n2.\tVerlagere die Gewicht auf einem Bein.\n3.\tStrecke den Fuß leicht vor.\n4.\tSchwinge den Bein langsam vor und zurück."
