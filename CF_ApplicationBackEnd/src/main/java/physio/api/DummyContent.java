@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -48,20 +49,10 @@ public class DummyContent {
 		ObjectMapper mapper = new ObjectMapper();
 
 		// generate Patient data
-		File resource = new ClassPathResource("sampledata_patient.json").getFile();
-		String patients = new String(Files.readAllBytes(resource.toPath()));
-		JSONArray json = new JSONArray(patients);
-		for (Object s: json) {
-			userRepository.save(mapper.readValue(s.toString(), User.class));
-		}
+		fillData("sampledata_patient.json", User.class, userRepository);
 
 		// generate Patient data
-		resource = new ClassPathResource("sampledata_therapist.json").getFile();
-		String therapists = new String(Files.readAllBytes(resource.toPath()));
-		json = new JSONArray(therapists);
-		for (Object s: json) {
-			userRepository.save(mapper.readValue(s.toString(), User.class));
-		}
+		fillData("sampledata_therapist.json", User.class, userRepository);
 
 		// dummy admin user
 		User a = mapper.readValue(admin, User.class);
@@ -71,5 +62,16 @@ public class DummyContent {
 		//therapist2Patient.save(th2pa);
 
 		return new ResponseEntity(HttpStatus.OK);
+	}
+
+	private void fillData(String path, Class classT, CrudRepository repository) throws IOException {
+		ObjectMapper mapper = new ObjectMapper();
+		File resource = new ClassPathResource(path).getFile();
+		String therapists = new String(Files.readAllBytes(resource.toPath()));
+		JSONArray json = new JSONArray(therapists);
+		for (Object s: json) {
+			repository.save(mapper.readValue(s.toString(), classT));
+		}
+
 	}
 }
