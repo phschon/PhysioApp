@@ -6,7 +6,7 @@ sap.ui.define([
 
 	return Controller.extend("sapcp.cf.strongpeople.physioapp.controller.PatientDetails", {
 		onInit: function () {
-			
+			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 		},
 		onPatientSearch : function(oEvent) {
 			// add filter for search
@@ -18,7 +18,7 @@ sap.ui.define([
 			
 		},
 		pressPatientShowVideos: function(oEvent) {
-			
+			this.oRouter.navTo("patientVideos");
 		},
 		pressPatientUpdateDetails: function(oEvent) {
 			

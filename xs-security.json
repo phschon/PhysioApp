@@ -1,64 +1,19 @@
 {
-  "xsappname": "physio-app",
+  "xsappname": "mta_physioapp1",
   "tenant-mode": "dedicated",
-  "description": "Security profile of Physio Application",
+  "description": "Security profile of called application",
   "scopes": [
     {
-      "name": "$XSAPPNAME.patient",
-      "description": "Patient user access"
-    },
-    {
-      "name": "$XSAPPNAME.therapist",
-      "description": "Therapist user access"
-    },
-    {
-      "name": "$XSAPPNAME.admin",
-      "description": "Admin user access"
+      "name": "uaa.user",
+      "description": "UAA"
     }
   ],
   "role-templates": [
     {
-      "name": "Patient",
-      "description": "Patient role template",
+      "name": "Token_Exchange",
+      "description": "UAA",
       "scope-references": [
-        "$XSAPPNAME.patient"
-      ]
-    },
-    {
-      "name": "Therapist",
-      "description": "Therapist role template",
-      "scope-references": [
-        "$XSAPPNAME.therapist"
-      ]
-    },
-    {
-      "name": "Admin",
-      "description": "Admin role template",
-      "scope-references": [
-        "$XSAPPNAME.admin"
-      ]
-    }
-  ],
-  "role-collections": [
-    {
-      "name": "Patient",
-      "description": "Patient role collection",
-      "role-template-references": [
-        "$XSAPPNAME.Patient"
-      ]
-    },
-    {
-      "name": "Therapist",
-      "description": "Therapist role collection",
-      "role-template-references": [
-        "$XSAPPNAME.Therapist"
-      ]
-    },
-    {
-      "name": "Administrator",
-      "description": "Administrator access",
-      "role-template-references": [
-        "$XSAPPNAME.Admin"
+        "uaa.user"
       ]
     }
   ]

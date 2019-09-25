@@ -73,6 +73,46 @@
 					</MenuButton>
 				</cells>
 			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="101" />
+					<Text text="Adam" />
+					<Text text="Peter Boehm Strassee 4" />
+					<Text text="978787" />
+					<Text text="lmn@gmail.com" />
+					<MenuButton text="Actions">
+						<menu>
+							<Menu itemSelected="onMenuAction">
+								<items>
+									<MenuItem text="Show Diagnosis" press="pressPatientShowDiagnosis"/>
+									<MenuItem text="Show Videos" press="pressPatientShowVideos"/>
+									<MenuItem text="Update details" press="pressPatientUpdateDetails"/>
+								</items>
+							</Menu>
+						</menu>
+					</MenuButton>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="102" />
+					<Text text="Joaquin" />
+					<Text text="Peter Boehm Strassee 224" />
+					<Text text="234166" />
+					<Text text="xyz@gmail.com" />
+					<MenuButton text="Actions">
+						<menu>
+							<Menu itemSelected="onMenuAction">
+								<items>
+									<MenuItem text="Show Diagnosis" press="pressPatientShowDiagnosis"/>
+									<MenuItem text="Show Videos" press="pressPatientShowVideos"/>
+									<MenuItem text="Update details" press="pressPatientUpdateDetails"/>
+								</items>
+							</Menu>
+						</menu>
+					</MenuButton>
+				</cells>
+			</ColumnListItem>
 		</items>
 	</Table>
 </mvc:View>
