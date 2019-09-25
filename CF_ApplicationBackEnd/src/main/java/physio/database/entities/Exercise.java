@@ -1,4 +1,4 @@
-package physio.dto;
+package physio.database.entities;
 
 import javax.validation.constraints.NotNull;
 

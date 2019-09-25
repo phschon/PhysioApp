@@ -1,4 +1,4 @@
-package physio.dto;
+package physio.database.entities;
 
 import javax.validation.constraints.NotNull;
 
@@ -14,4 +14,5 @@ public class Therapist2Patient {
 
 	@NotNull
 	private String patient;
+
 }

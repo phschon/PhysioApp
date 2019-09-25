@@ -1,6 +1,8 @@
-package physio.dto;
+package physio.database.entities;
 
 import javax.validation.constraints.NotNull;
+
+import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
@@ -9,26 +11,21 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class User {
-
+public class TherapyPlan {
 	@NotNull
 	private String id;
 
 	@NotNull
-	private String email;
+	private String patient;
 
 	@NotNull
-	private String role;
+	private String therapist;
 
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private String firstName;
+	private String name;
 
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private String lastName;
+	private List<TrainingUnit> trainingUnits;
 
-	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private String address;
 
-	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private String imageUrl;
 }
