@@ -1,42 +1,42 @@
 [
  {
-   "ID": "fc2a8fa3-107a-42e3-b94e-f0ed451db208",
+   "id": "fc2a8fa3-107a-42e3-b94e-f0ed451db208",
    "email": "monika.filipov@example.com",
-   "Vname": "Monika",
-   "Nname": "Filipov",
-   "Role": "Patient",
-   "url_image": "https://randomuser.me/api/portraits/women/20.jpg"
+   "firstName": "Monika",
+   "lastName": "Filipov",
+   "role": "Patient",
+   "imageUrl": "https://randomuser.me/api/portraits/women/20.jpg"
  },
  {
-   "ID": "7be59dd8-133d-4fda-9557-fbf0450eb32b",
+   "id": "7be59dd8-133d-4fda-9557-fbf0450eb32b",
    "email": "shayne.aling@example.com",
-   "Vname": "Shayne",
-   "Nname": "Aling",
-   "Role": "Patient",
-   "url_image": "https://randomuser.me/api/portraits/men/43.jpg"
+   "firstName": "Shayne",
+   "lastName": "Aling",
+   "role": "Patient",
+   "imageUrl": "https://randomuser.me/api/portraits/men/43.jpg"
  },
  {
-   "ID": "c46532e4-94fc-4f35-ad73-f7dadcac8592",
+   "id": "c46532e4-94fc-4f35-ad73-f7dadcac8592",
    "email": "inocencio.bernat@example.com",
-   "Vname": "Inocencio",
-   "Nname": "Bernat",
-   "Role": "Patient",
-   "url_image": "https://randomuser.me/api/portraits/men/31.jpg"
+   "firstName": "Inocencio",
+   "lastName": "Bernat",
+   "role": "Patient",
+   "imageUrl": "https://randomuser.me/api/portraits/men/31.jpg"
  },
  {
-   "ID": "9dc670cb-e931-4bfe-b24e-24101f053eb1",
+   "id": "9dc670cb-e931-4bfe-b24e-24101f053eb1",
    "email": "madhu.taggart@example.com",
-   "Vname": "Madhu",
-   "Nname": "Taggart",
-   "Role": "Patient",
-   "url_image": "https://randomuser.me/api/portraits/men/58.jpg"
+   "firstName": "Madhu",
+   "lastName": "Taggart",
+   "role": "Patient",
+   "imageUrl": "https://randomuser.me/api/portraits/men/58.jpg"
  },
  {
-   "ID": "5598463c-a8dd-4f5d-88d8-7bdc1937e025",
+   "id": "5598463c-a8dd-4f5d-88d8-7bdc1937e025",
    "email": "aideen.bjoerkman@example.com",
-   "Vname": "Aideen",
-   "Nname": "Björkman",
-   "Role": "Patient",
-   "url_image": "https://randomuser.me/api/portraits/women/14.jpg"
+   "firstName": "Aideen",
+   "lastName": "Björkman",
+   "role": "Patient",
+   "imageUrl": "https://randomuser.me/api/portraits/women/14.jpg"
  }
 ]

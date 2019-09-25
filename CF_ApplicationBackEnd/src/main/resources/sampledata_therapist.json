@@ -1,26 +1,26 @@
 [
  {
-   "ID": "03af6513-c3cc-4673-8c2f-7a93cf27b1a5",
+   "id": "03af6513-c3cc-4673-8c2f-7a93cf27b1a5",
    "email": "madeline.breckenridge@example.com",
-   "Vname": "Madeline",
-   "Nname": "Breckenridge",
-   "Role": "Therapist",
-   "url_image": "https://randomuser.me/api/portraits/women/36.jpg"
+   "firstName": "Madeline",
+   "lastName": "Breckenridge",
+   "role": "Therapist",
+   "imageUrl": "https://randomuser.me/api/portraits/women/36.jpg"
  },
  {
-   "ID": "5f50a562-e8d0-4cdf-b761-5fc2e29f65a7",
+   "id": "5f50a562-e8d0-4cdf-b761-5fc2e29f65a7",
    "email": "bile.mynatt@example.com",
-   "Vname": "Bile",
-   "Nname": "Mynatt",
-   "Role": "Therapist",
-   "url_image": "https://randomuser.me/api/portraits/men/48.jpg"
+   "firstName": "Bile",
+   "lastName": "Mynatt",
+   "role": "Therapist",
+   "imageUrl": "https://randomuser.me/api/portraits/men/48.jpg"
  },
  {
-   "ID": "46c27eb6-1ec7-498c-878d-00a0c7625b1e",
+   "id": "46c27eb6-1ec7-498c-878d-00a0c7625b1e",
    "email": "leonius.holland@example.com",
-   "Vname": "Leonius",
-   "Nname": "Holland",
-   "Role": "Therapist",
-   "url_image": "https://randomuser.me/api/portraits/men/29.jpg"
+   "firstName": "Leonius",
+   "lastName": "Holland",
+   "role": "Therapist",
+   "imageUrl": "https://randomuser.me/api/portraits/men/29.jpg"
  }
 ]
