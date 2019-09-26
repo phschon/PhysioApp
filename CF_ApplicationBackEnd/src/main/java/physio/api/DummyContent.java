@@ -18,9 +18,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import physio.database.entities.Exercise;
 import physio.database.entities.Module;
+import physio.database.entities.Program;
 import physio.database.entities.User;
 import physio.database.repository.ExerciseRepository;
 import physio.database.repository.ModuleRepository;
+import physio.database.repository.ProgramRepository;
 import physio.database.repository.UserRepository;
 
 @Component
@@ -31,6 +33,9 @@ public class DummyContent {
 
 	@Autowired
 	ExerciseRepository exerciseRepository;
+
+	@Autowired
+	ProgramRepository programRepository;
 
 	@Autowired
 	ModuleRepository moduleRepository;
@@ -56,6 +61,9 @@ public class DummyContent {
 
 		// dummy module
 		fillData("sampledata_module.json", Module.class, moduleRepository);
+
+		// dummy module
+		fillData("sampledata_program.json", Program.class, programRepository);
 
 		//therapist2Patient.save(th2pa);
 
