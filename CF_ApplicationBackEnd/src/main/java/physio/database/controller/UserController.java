@@ -41,8 +41,8 @@ public class UserController extends PhysioExceptionHandler {
 		return new ResponseEntity(HttpStatus.CREATED);
 	}
 
-	@GetMapping("/users")
-	public ResponseEntity<List<User>> getUsers() {
+	//@GetMapping("/users")
+	private ResponseEntity<List<User>> getUsers() {
 		LinkedList<User> list = new LinkedList<>();
 		userRepository.findAll().forEach(list::add);
 		return new ResponseEntity<>(list, HttpStatus.OK);
@@ -50,17 +50,29 @@ public class UserController extends PhysioExceptionHandler {
 
 	@GetMapping("/users/patients")
 	public ResponseEntity<List<User>> getPatients() {
-		return getusers("Patient");
+		return getUsers("Patient");
 	}
 
 	@GetMapping("/users/therapists")
 	public ResponseEntity<List<User>> getTherapists() {
-		return getusers("Therapist");
+		return getUsers("Therapist");
 	}
 
 	@GetMapping("/users/admins")
 	public ResponseEntity<List<User>> getAdmins() {
-		return getusers("Admin");
+		return getUsers("Admin");
+	}
+
+	@GetMapping("/users/debug")
+	public ResponseEntity<String> getDebug(@AuthenticationPrincipal Token token) throws PhysioError {
+		if (token == null) {
+			throw new PhysioError("No token found.", PhysioError.http_code_bad_request);
+		}
+		String ret;
+		ret = token.getAppToken();
+		ret = ret + "\n" + tokenString(token);
+		return new ResponseEntity<>(ret, HttpStatus.OK);
+
 	}
 
 	@GetMapping("/users/ownuser")
@@ -76,7 +88,7 @@ public class UserController extends PhysioExceptionHandler {
 		return first.map(user -> new ResponseEntity<>(user, HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
 	}
 
-	private ResponseEntity<List<User>> getusers(String role) {
+	private ResponseEntity<List<User>> getUsers(String role) {
 		// TODO: this is NOT efficient! Use SQL filtering!
 		return new ResponseEntity<>(getUsers().getBody().stream().filter(u -> u.getRole().equals(role)).collect(Collectors.toList()), HttpStatus.OK);
 	}

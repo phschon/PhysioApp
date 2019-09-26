@@ -16,14 +16,8 @@ import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import physio.database.entities.Exercise;
-import physio.database.entities.Module;
-import physio.database.entities.Program;
-import physio.database.entities.User;
-import physio.database.repository.ExerciseRepository;
-import physio.database.repository.ModuleRepository;
-import physio.database.repository.ProgramRepository;
-import physio.database.repository.UserRepository;
+import physio.database.entities.*;
+import physio.database.repository.*;
 
 @Component
 public class DummyContent {
@@ -33,6 +27,9 @@ public class DummyContent {
 
 	@Autowired
 	ExerciseRepository exerciseRepository;
+
+	@Autowired
+	ExercisePoolRepository exercisePoolRepository;
 
 	@Autowired
 	ProgramRepository programRepository;
@@ -59,8 +56,12 @@ public class DummyContent {
 		// dummy exercise
 		fillData("sampledata_exercise.json", Exercise.class, exerciseRepository);
 
+
+		// dummy exercisePool
+		fillData("sampledata_exercise_pool.json", ExercisePool.class, exercisePoolRepository);
+
 		// dummy module
-		fillData("sampledata_module.json", Module.class, moduleRepository);
+		fillData("sampledata_module.json", TrainingModule.class, moduleRepository);
 
 		// dummy program
 		fillData("sampledata_program.json", Program.class, programRepository);

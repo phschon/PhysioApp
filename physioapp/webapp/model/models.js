@@ -5,12 +5,15 @@ sap.ui.define([
 	"use strict";
 
 	return {
-
 		createDeviceModel: function () {
-			var oModel = new JSONModel(Device);
+			var oModel = new JSONModel({
+				isTouch: Device.support.touch,
+				isNoTouch: !Device.support.touch,
+				isPhone: Device.system.phone,
+				isNoPhone: !Device.system.phone
+			});
 			oModel.setDefaultBindingMode("OneWay");
 			return oModel;
 		}
-
 	};
 });

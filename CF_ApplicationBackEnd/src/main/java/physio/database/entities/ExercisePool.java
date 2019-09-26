@@ -25,6 +25,6 @@ public class ExercisePool {
     @NotNull
     private String url;
 
-//    @NotNull
-//    private Category category;
+    @NotNull
+    private String categoryId;
 }
