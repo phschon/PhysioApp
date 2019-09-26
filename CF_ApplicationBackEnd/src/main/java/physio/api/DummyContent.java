@@ -62,8 +62,11 @@ public class DummyContent {
 		// dummy module
 		fillData("sampledata_module.json", Module.class, moduleRepository);
 
-		// dummy module
+		// dummy program
 		fillData("sampledata_program.json", Program.class, programRepository);
+
+		// dummy own users
+		fillData("sampledata_ownUsers.json", User.class, userRepository);
 
 		//therapist2Patient.save(th2pa);
 
