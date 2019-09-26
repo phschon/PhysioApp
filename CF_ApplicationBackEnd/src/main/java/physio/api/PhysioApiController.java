@@ -16,7 +16,7 @@ import physio.PhysioConfig;
 @RestController
 public class PhysioApiController implements PhysioApi {
 
-	private static final Log logger = LogFactory.getLog(PhysioConfig.class);
+	private static final Log logger = LogFactory.getLog(PhysioApiController.class);
 
 	public ResponseEntity<String> testEndpoint(@AuthenticationPrincipal Token token,  String param) {
 

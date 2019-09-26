@@ -1,0 +1,50 @@
+[
+ {
+   "id": "13af6513-c3cc-4673-8c2f-7a93cf27b1a5",
+   "email": "bjoern.pospiech@pranado.org",
+   "firstName": "Björn",
+   "lastName": "Pospiech",
+   "role": "Admin",
+   "imageUrl": "https://randomuser.me/api/portraits/men/36.jpg"
+ },
+ {
+   "id": "bf50a562-e8d0-4cdf-b761-5fc2e29f65a7",
+   "email": "brijesh.lochan@sap.com",
+   "firstName": "Brijesh",
+   "lastName": "Lochan",
+   "role": "Patient",
+   "imageUrl": "https://randomuser.me/api/portraits/women/48.jpg"
+ },
+  {
+    "id": "36c27eb6-1ec7-498c-878d-00a0c7625b1e",
+    "email": "mario.schlereth@sap.com",
+    "firstName": "Mario",
+    "lastName": "Schlereth",
+    "role": "Therapist",
+    "imageUrl": "https://randomuser.me/api/portraits/men/29.jpg"
+  },
+  {
+    "id": "af50a562-e8d0-4cdf-b761-5fc2e29f65a7",
+    "email": "ph@strongpeople.institute",
+    "firstName": "Peter",
+    "lastName": "Hoffmann",
+    "role": "Patient",
+    "imageUrl": "https://randomuser.me/api/portraits/women/48.jpg"
+  },
+  {
+    "id": "2f50a562-e8d0-4cdf-b761-5fc2e29f65a7",
+    "email": "philipp.schon@sap.com",
+    "firstName": "Philipp",
+    "lastName": "Schon",
+    "role": "Therapist",
+    "imageUrl": "https://randomuser.me/api/portraits/men/22.jpg"
+  },
+  {
+    "id": "5f50a562-e8d0-4cdf-b761-5fc2e29f65a7",
+    "email": "m.shea@sap.com",
+    "firstName": "Michael",
+    "lastName": "Shea",
+    "role": "Patient",
+    "imageUrl": "https://randomuser.me/api/portraits/women/41.jpg"
+  }
+]

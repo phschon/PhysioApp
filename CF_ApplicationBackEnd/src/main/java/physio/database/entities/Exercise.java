@@ -22,7 +22,7 @@ public class Exercise {
 	//@Id
 	@NotNull
 	//@OneToMany(mappedBy="id", targetEntity=User.class)
-	private String patientId;
+	private String moduleId;
 
 	@NotNull
 	private String exercisePoolId;
