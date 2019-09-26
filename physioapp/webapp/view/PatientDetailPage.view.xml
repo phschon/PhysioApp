@@ -1,0 +1,64 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="sapcp.cf.strongpeople.physioapp.controller.PatientDetailPage" xmlns:html="http://www.w3.org/1999/xhtml">
+    <App>
+		<pages>
+			<Page title="{i18n>pageTitlePatientDetailPage}">
+                <content>
+                    <Table id="PatientDetailsTable"
+                        showNoData="false"
+                        inset="false"
+                        items="{/}">
+                        <columns>
+                            <Column
+                                demandPopin="true"
+                                hAlign="Left">
+                                <Text text="ID" />
+                            </Column>
+                            <Column
+                                demandPopin="true"
+                                popinDisplay="Inline"
+                                hAlign="Left">
+                                <Text text="Name" />
+                            </Column>
+                            <Column
+                                demandPopin="true"
+                                popinDisplay="Inline"
+                                hAlign="Left">
+                                <Text text="Email" />
+                            </Column>
+                            <Column
+                                demandPopin="true"
+                                popinDisplay="Inline"
+                                hAlign="End">
+                                <Text text="Actions" />
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text id="PatientId_PatientDetailPage" text="{ID}" />
+                                    <ObjectIdentifier
+                                        title="{Vname}"
+                                        text="{Nname}" />
+                                    <Text text="{email}" />
+                                    <MenuButton text="Actions">
+                                        <menu>
+                                            <Menu itemSelected="onMenuAction">
+                                                <items>
+                                                    <MenuItem text="Show Diagnosis" press="pressPatientShowDiagnosis"/>
+                                                    <MenuItem text="Show Videos" press="pressPatientShowVideos"/>
+                                                    <MenuItem text="Show Training programs" press="pressPatientShowTrainingPrograms"/>
+                                                    <MenuItem text="Update details" press="pressPatientUpdateDetails"/>
+                                                </items>
+                                            </Menu>
+                                        </menu>
+                                    </MenuButton>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </content>
+            </Page>
+        </pages>
+	</App>
+</mvc:View>

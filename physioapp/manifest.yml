@@ -1,0 +1,8 @@
+applications:
+  - name: physioAppUI
+    instances: 1
+    memory: 256MB
+    buildpacks:
+      - nodejs_buildpack
+    routes:
+      - route: physioAppUI.cfapps.eu10.hana.ondemand.com

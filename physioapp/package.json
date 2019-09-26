@@ -1,0 +1,14 @@
+{
+  "name": "physioapp",
+  "version": "1.0.0",
+  "description": "Phsio App for patients and physiotherapists",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/@sap/approuter/approuter.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/approuter": "^6.4.1"
+  }
+}
