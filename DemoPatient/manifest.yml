@@ -6,9 +6,15 @@ applications:
       - nodejs_buildpack
     routes:
       - route: DemoPatientUI.cfapps.eu10.hana.ondemand.com
+    services: 
+      - physio-xsuaa
     env:
     	destinations: >
     					[{
-    					"name" : "media-share",
-    					"url" : "https://pranado-my.sharepoint.com/:v:/g/personal/bp_strongpeople_institute/"
+                "name": "physio-backend", 
+                "url": "https://physiobackend.cfapps.eu10.hana.ondemand.com",
+                "forwardAuthToken": true
+              },{
+                "name" : "media-share",
+                "url" : "https://pranado-my.sharepoint.com/:v:/g/personal/bp_strongpeople_institute/"
     					}]

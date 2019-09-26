@@ -50,17 +50,17 @@ public class UserController extends PhysioExceptionHandler {
 
 	@GetMapping("/users/patients")
 	public ResponseEntity<List<User>> getPatients() {
-		return getusers("Patient");
+		return getUsers("Patient");
 	}
 
 	@GetMapping("/users/therapists")
 	public ResponseEntity<List<User>> getTherapists() {
-		return getusers("Therapist");
+		return getUsers("Therapist");
 	}
 
 	@GetMapping("/users/admins")
 	public ResponseEntity<List<User>> getAdmins() {
-		return getusers("Admin");
+		return getUsers("Admin");
 	}
 
 	@GetMapping("/users/debug")
@@ -88,7 +88,7 @@ public class UserController extends PhysioExceptionHandler {
 		return first.map(user -> new ResponseEntity<>(user, HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
 	}
 
-	private ResponseEntity<List<User>> getusers(String role) {
+	private ResponseEntity<List<User>> getUsers(String role) {
 		// TODO: this is NOT efficient! Use SQL filtering!
 		return new ResponseEntity<>(getUsers().getBody().stream().filter(u -> u.getRole().equals(role)).collect(Collectors.toList()), HttpStatus.OK);
 	}

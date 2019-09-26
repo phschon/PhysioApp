@@ -6,6 +6,7 @@ sap.ui.define([
 
 	return Controller.extend("sapcp.cf.strongpeople.physioapp.controller.App", {
 		onInit: function () {
+			
 			$.ajax({
 				method: "GET",
 				url: "/api/users/",

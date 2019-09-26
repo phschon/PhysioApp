@@ -56,14 +56,6 @@
 				"settings": {
 					"bundleName": "sapcp.cf.strongpeople.physioapp.i18n.i18n"
 				}
-			},
-			"Videos": {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "model/Videos.json"
-            },
-            "Patients": {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "model/Patients.json"
 			}
 		},
 		"resources": {
