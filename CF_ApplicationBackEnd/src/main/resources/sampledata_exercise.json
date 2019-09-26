@@ -1,8 +1,8 @@
 [
  {
-   "ID": "10fcc013-3679-4ea6-84ee-e7d6a303b183",
-   "User_ID": "fc2a8fa3-107a-42e3-b94e-f0ed451db208",
-   "Exercise_Pool_ID": "36802efc-39d3-4a6e-a185-3cb8cc5ba5a4",
-   "Beschreibung": "1.\tBegebe dich in Bauchlage\n2.\tStütze dich auf den Ellbogen ab (in gerader Linie unter dem Schultergelenk)\n3.\tLasse dabei zunächst noch die Knie auf dem Boden und halte den Rücken gerade\n4.\tStrecke dann die Knie durch und halte die Übung. \nWichtig ist, dass der Rücken gerade gelassen wird!\n5.\tHalte die Übung für 15 Sekunden\nAlternativ: Bewege den Körper nun 15 Mal vor und zurück.\nBemerkungen: \nRücken gerade lassen u für Bauchspannung halten \nKontraindikation: keine frische OPs im Ellbogen u Schulterbereich, frischen BSV u Bauch OPs, Entzündungen im Schultergelenk u Ellbogen, frischen Frakturen etc ."
+   "id": "10fcc013-3679-4ea6-84ee-e7d6a303b183",
+   "patientId": "fc2a8fa3-107a-42e3-b94e-f0ed451db208",
+   "exercisePoolId": "36802efc-39d3-4a6e-a185-3cb8cc5ba5a4",
+   "description": "1.\tBegebe dich in Bauchlage\n2.\tStütze dich auf den Ellbogen ab (in gerader Linie unter dem Schultergelenk)\n3.\tLasse dabei zunächst noch die Knie auf dem Boden und halte den Rücken gerade\n4.\tStrecke dann die Knie durch und halte die Übung. \nWichtig ist, dass der Rücken gerade gelassen wird!\n5.\tHalte die Übung für 15 Sekunden\nAlternativ: Bewege den Körper nun 15 Mal vor und zurück.\nBemerkungen: \nRücken gerade lassen u für Bauchspannung halten \nKontraindikation: keine frische OPs im Ellbogen u Schulterbereich, frischen BSV u Bauch OPs, Entzündungen im Schultergelenk u Ellbogen, frischen Frakturen etc ."
  }
 ]

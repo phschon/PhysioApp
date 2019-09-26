@@ -1,8 +1,8 @@
 package physio.database.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,5 +28,6 @@ public class Exercise {
 	private String exercisePoolId;
 
 	@JsonInclude(JsonInclude.Include.NON_NULL)
+	@Column( length = 100000 )
 	private String description;
 }

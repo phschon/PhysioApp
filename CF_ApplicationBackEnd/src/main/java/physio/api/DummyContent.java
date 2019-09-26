@@ -16,10 +16,12 @@ import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import physio.database.repository.Therapist2PatientRepository;
-import physio.database.repository.UserRepository;
-import physio.database.entities.Therapist2Patient;
+import physio.database.entities.Exercise;
+import physio.database.entities.Module;
 import physio.database.entities.User;
+import physio.database.repository.ExerciseRepository;
+import physio.database.repository.ModuleRepository;
+import physio.database.repository.UserRepository;
 
 @Component
 public class DummyContent {
@@ -28,11 +30,12 @@ public class DummyContent {
 	UserRepository userRepository;
 
 	@Autowired
-	Therapist2PatientRepository therapist2Patient;
+	ExerciseRepository exerciseRepository;
+
+	@Autowired
+	ModuleRepository moduleRepository;
 
 	private String admin = "   {\n" + "        \"id\": \"a1\",\n" + "        \"email\": \"admin@123.de\",\n" + "        \"role\": \"Admin\",\n" + "        \"firstName\": \"test\",\n" + "        \"lastName\": \"admin\",\n" + "        \"address\": \"address\",\n" + "        \"imageUrl\": \"www.de\"\n" + "    }";
-
-	private String t2p = "{\"therapist\": \"t1\", \"patient\": \"p1\"}";
 
 	@EventListener(ApplicationReadyEvent.class)
 	public ResponseEntity fill() throws IOException {
@@ -48,7 +51,12 @@ public class DummyContent {
 		User a = mapper.readValue(admin, User.class);
 		userRepository.save(a);
 
-		Therapist2Patient th2pa = mapper.readValue(t2p, Therapist2Patient.class);
+		// dummy exercise
+		fillData("sampledata_exercise.json", Exercise.class, exerciseRepository);
+
+		// dummy module
+		fillData("sampledata_module.json", Module.class, moduleRepository);
+
 		//therapist2Patient.save(th2pa);
 
 		return new ResponseEntity(HttpStatus.OK);

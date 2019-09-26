@@ -1,15 +1,18 @@
 package physio.database.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
-
-import com.fasterxml.jackson.annotation.JsonInclude;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class TrainingUnit {
+@Entity
+public class Module {
+
+	@Id
 	@NotNull
 	private String id;
 
@@ -19,6 +22,6 @@ public class TrainingUnit {
 	@NotNull
 	private String date;
 
-	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private String description;
+	@NotNull
+	private String template;
 }
