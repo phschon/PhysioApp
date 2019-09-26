@@ -13,9 +13,11 @@ For individuals we want to track the progress the patient has made in the module
 ### Weg zur Gesundheit
 Imagine a race track or a path the patient has to go to reach the finish: Weg zur Gesundheit. For each successful completion of a Tagesplan, the patient advances on the track. Dynamically assign reward points for percentage of completion. For a track with 20 fields, maybe a reward at 25, 50, and 75 percent. For a track with 4 fields a larger reward at 50 percent.
 
+![Rennbahn][Rennbahn]
+
 ### Bausteine eine gesunde Körper
 Imagine Lego bricks. For each completed Tagesplan or set of Tagespläne, you get a brick which you can use to complete your healthy body. A similar idea would be to allow the patient to build something creatively and not have a fixed picture that the patient completes. This gives the patient a little room to play.
-!(https://github.com/Pranado-gGmbH/PhysioApp/blob/master/gamification/rennbahn.jpg)
+![Weg zur Gesundheit][WzG]
 
 ## Rewards
 * Rebate a percentage of the fee the patient paid for the application
@@ -25,3 +27,5 @@ Imagine Lego bricks. For each completed Tagesplan or set of Tagespläne, you get
 * Time off, cash, goods, or services from the employer.
 * Chances to win prizes in some kind of lottery
 
+[Rennbahn]: https://github.com/Pranado-gGmbH/PhysioApp/blob/master/gamification/rennbahn.jpg "Track for life."
+[WzG]: https://github.com/Pranado-gGmbH/PhysioApp/blob/master/gamification/weg_zur_gesundheit.jpg "Path to health and building blocks for a healthy body"
