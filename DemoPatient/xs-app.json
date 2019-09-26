@@ -6,7 +6,7 @@
 			"source" : "^/media/(.*)$",
 			"target" : "$1",
 			"destination" : "media-share"
-		}
+		},
 		{ 
 			"source": "^/(.*)", 
 			"localDir": "webapp" 
