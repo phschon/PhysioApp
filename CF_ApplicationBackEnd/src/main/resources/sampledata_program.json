@@ -3,35 +3,30 @@
    "id": "5cc6fa5f-35dd-4b77-a420-614e74ae7c8d",
    "therapistId": "03af6513-c3cc-4673-8c2f-7a93cf27b1a5",
    "patientId": "fc2a8fa3-107a-42e3-b94e-f0ed451db208",
-   "name": "Knie-Überdehnung-002",
-   "moduleId": ""
+   "name": "Knie-Überdehnung-002"
  },
  {
    "id": "c3396390-a0ca-45a7-bc03-3eb30ffc89fe",
    "therapistId": "5f50a562-e8d0-4cdf-b761-5fc2e29f65a7",
    "patientId": "7be59dd8-133d-4fda-9557-fbf0450eb32b",
-   "name": "M79.12",
-   "moduleId": ""
+   "name": "M79.12"
  },
  {
    "id": "630f68c6-2912-4154-a66f-3dcf33ee44ad",
    "therapistId": "46c27eb6-1ec7-498c-878d-00a0c7625b1e",
    "patientId": "c46532e4-94fc-4f35-ad73-f7dadcac8592",
-   "name": "Myalgie-Q3-2019",
-   "moduleId": ""
+   "name": "Myalgie-Q3-2019"
  },
  {
    "id": "2884034d-632b-4d2f-9caa-b7c0ae7dcb7f",
    "therapistId": "46c27eb6-1ec7-498c-878d-00a0c7625b1e",
    "patientId": "9dc670cb-e931-4bfe-b24e-24101f053eb1",
-   "name": "Myalgie-Q2-2019",
-   "moduleId": ""
+   "name": "Myalgie-Q2-2019"
  },
  {
    "id": "653368bc-8b8a-42f7-ab77-25f7f2db40e5",
    "therapistId": "03af6513-c3cc-4673-8c2f-7a93cf27b1a5",
    "patientId": "5598463c-a8dd-4f5d-88d8-7bdc1937e025",
-   "name": "Rücken-007",
-   "moduleId": ""
+   "name": "Rücken-007"
  }
 ]
