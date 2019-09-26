@@ -63,6 +63,18 @@ public class UserController extends PhysioExceptionHandler {
 		return getusers("Admin");
 	}
 
+	@GetMapping("/users/debug")
+	public ResponseEntity<String> getDebug(@AuthenticationPrincipal Token token) throws PhysioError {
+		if (token == null) {
+			throw new PhysioError("No token found.", PhysioError.http_code_bad_request);
+		}
+		String ret;
+		ret = token.getAppToken();
+		ret = ret + "\n" + tokenString(token);
+		return new ResponseEntity<>(ret, HttpStatus.OK);
+
+	}
+
 	@GetMapping("/users/ownuser")
 	public ResponseEntity<User> getOwnUser(@AuthenticationPrincipal Token token) throws PhysioError {
 		if (token == null) {

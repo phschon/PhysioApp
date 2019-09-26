@@ -5,6 +5,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.convert.converter.Converter;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -22,12 +23,13 @@ public class ApiConfiguration extends WebSecurityConfigurerAdapter {
 	@Autowired
 	XsuaaServiceConfiguration xsuaaServiceConfiguration;
 
-	//@Autowired
-	//private UserDetailsService userService;
-
 	private static final Log logger = LogFactory.getLog(ApiConfiguration.class);
 
-	private String isAdmin = "#oauth2.hasScopeMatching('admin')";
+	private final String[] allScopes = new String[]{"admin", "therapist", "patient"};
+	private final String[] nonAdmin = new String[]{"therapist","patient"};
+	private final String admin = "admin";
+	private final String therapist = "therapist";
+	private final String patient = "patient";
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
@@ -37,11 +39,9 @@ public class ApiConfiguration extends WebSecurityConfigurerAdapter {
         .and()
             .authorizeRequests()
             .antMatchers("/test/**").hasAuthority("admin")
-            .antMatchers("/users/ownuser").hasAuthority("patient")
-            .antMatchers("/users/ownuser").hasAuthority("admin")
-            .antMatchers("/users/ownuser").hasAuthority("therapist")
-            //.antMatchers(HttpMethod.POST, "/therapists").permitAll()
-            //.antMatchers(HttpMethod.GET, "/therapists").permitAll()
+            .antMatchers("/users/**").hasAnyAuthority(allScopes)
+            .antMatchers(HttpMethod.POST, "/users/**").hasAnyAuthority(allScopes)
+			// TODO: for productive use replace permitAll() with denyAll() and add all paths with scope checks above
             .anyRequest().permitAll()
         .and()
             .oauth2ResourceServer()
@@ -55,22 +55,4 @@ public class ApiConfiguration extends WebSecurityConfigurerAdapter {
 		converter.setLocalScopeAsAuthorities(true);
 		return converter;
 	}
-
-	//@Bean
-	//public BCryptPasswordEncoder passwordEncoder(){
-	//	return new BCryptPasswordEncoder();
-	//}
-
-	//@Bean
-	//public DaoAuthenticationProvider authenticationProvider(){
-	//	DaoAuthenticationProvider auth = new DaoAuthenticationProvider();
-	//	auth.setUserDetailsService(userService);
-	//	auth.setPasswordEncoder(passwordEncoder());
-	//	return auth;
-	//}
-
-	//@Override
-	//protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-	//	auth.authenticationProvider(authenticationProvider());
-	//}
 }
