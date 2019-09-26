@@ -22,26 +22,30 @@
 			icon="sap-icon://away"
 			iconDensityAware="false"
 			iconInset="false"
-			type="Navigation" />
+			type="Navigation" 
+			press="onModuleSelected"/>
 		<StandardListItem
 			title="Morgen"
 			description="{1/ProductId}"
 			icon="sap-icon://future"
 			iconDensityAware="false"
-			iconInset="false" />
+			iconInset="false" 
+			press="onModuleSelected"/>
 		<StandardListItem
 			title="27.09."
 			description="{2/ProductId}"
 			icon="sap-icon://future"
 			iconDensityAware="false"
-			iconInset="false" />
+			iconInset="false"
+			press="onModuleSelected"/>
 		<StandardListItem
 			title="20.09."
 			description="{2/ProductId}"
 			icon="sap-icon://past"
 			iconDensityAware="false"
 			iconInset="false"
-			type="Navigation"/>			
+			type="Navigation"
+			press="onModuleSelected"/>			
 	</List>
 		
 					</content>

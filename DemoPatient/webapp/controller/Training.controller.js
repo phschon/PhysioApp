@@ -15,6 +15,11 @@ sap.ui.define([
 		onDisplayMedicalFile: function(Event){
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.navTo("medicalFile");			
-		}
+		},
+		
+		onModuleSelected: function(Event ) {
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("Module");
+		}		
 	});
 });

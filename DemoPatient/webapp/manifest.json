@@ -97,6 +97,12 @@
 				"titleTarget": "",
 				"greedy": false,
 				"target": ["view"]
+			}, {
+				"name": "Module",
+				"pattern": "Module",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["Module"]
 			}],
 			"targets": {
 				"training": {
@@ -122,6 +128,12 @@
 					"transition": "slide",
 					"clearControlAggregation": false,
 					"viewName": "View1"
+				},
+				"Module": {
+					"viewType": "XML",
+					"viewName": "Module",
+					"transition": "slide",
+					"clearControlAggregation": false
 				}
 			}
 		}
