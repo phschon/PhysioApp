@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	'sap/ui/model/Filter'
-], function (Controller, Filter) {
+	"sap/ui/model/Filter",
+	"sap/ui/model/json/JSONModel"
+], function (Controller, Filter, JSONModel) {
 	"use strict";
 
 	return Controller.extend("sapcp.cf.strongpeople.physioapp.controller.PatientDetailPage", {
@@ -18,9 +19,15 @@ sap.ui.define([
         },
         _onObjectMatched: function(oEvent) {
             this.patIndex = oEvent.getParameter("arguments").patIndex;
-            var oContext = this.getOwnerComponent().getModel("Patients").getContext('/patients/' + this.patIndex);
-            
-            this.getView().setBindingContext(oContext, 'patients');
+			//var oContext = this.getOwnerComponent().getModel("Patients").getContext('/patients/' + this.patIndex);
+
+			var oPatientData = this.getOwnerComponent().getModel("Patients").getProperty('/patients/' + this.patIndex);
+			
+			var oSelectedPatient = new JSONModel(oPatientData);
+
+			
+            this.getView().setModel(oSelectedPatient, "selectedPatient");
+            //this.getView().setBindingContext(oContext, 'patients');
 		},
 		
 		// _bindView : function (sObjectPath) {

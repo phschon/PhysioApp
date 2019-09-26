@@ -6,8 +6,7 @@
                 <content>
                     <Table id="PatientDetailsTable"
                         showNoData="false"
-                        inset="false"
-                        items="{/}">
+                        inset="false">
                         <columns>
                             <Column
                                 demandPopin="true"
@@ -36,11 +35,11 @@
                         <items>
                             <ColumnListItem>
                                 <cells>
-                                    <Text id="PatientId_PatientDetailPage" text="{ID}" />
+                                    <Text id="PatientId_PatientDetailPage" text="{selectedPatient>/ID}" />
                                     <ObjectIdentifier
-                                        title="{Vname}"
-                                        text="{Nname}" />
-                                    <Text text="{email}" />
+                                        title="{selectedPatient>/Vname}"
+                                        text="{selectedPatient>/Nname}" />
+                                    <Text text="{selectedPatient>/email}" />
                                     <MenuButton text="Actions">
                                         <menu>
                                             <Menu itemSelected="onMenuAction">
