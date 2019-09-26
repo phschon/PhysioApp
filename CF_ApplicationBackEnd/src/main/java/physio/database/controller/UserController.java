@@ -41,8 +41,8 @@ public class UserController extends PhysioExceptionHandler {
 		return new ResponseEntity(HttpStatus.CREATED);
 	}
 
-	@GetMapping("/users")
-	public ResponseEntity<List<User>> getUsers() {
+	//@GetMapping("/users")
+	private ResponseEntity<List<User>> getUsers() {
 		LinkedList<User> list = new LinkedList<>();
 		userRepository.findAll().forEach(list::add);
 		return new ResponseEntity<>(list, HttpStatus.OK);

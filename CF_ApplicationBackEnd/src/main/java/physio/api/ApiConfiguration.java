@@ -39,6 +39,9 @@ public class ApiConfiguration extends WebSecurityConfigurerAdapter {
         .and()
             .authorizeRequests()
             .antMatchers("/test/**").hasAuthority("admin")
+            .antMatchers("/users/patients").hasAnyAuthority(therapist, admin)
+            .antMatchers("/users/therapists").hasAnyAuthority(allScopes)
+            .antMatchers("/users/admins").hasAnyAuthority(admin)
             .antMatchers("/users/**").hasAnyAuthority(allScopes)
             .antMatchers(HttpMethod.POST, "/users/**").hasAnyAuthority(allScopes)
 			// TODO: for productive use replace permitAll() with denyAll() and add all paths with scope checks above
