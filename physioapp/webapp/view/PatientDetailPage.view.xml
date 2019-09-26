@@ -44,10 +44,8 @@
                                         <menu>
                                             <Menu itemSelected="onMenuAction">
                                                 <items>
-                                                    <MenuItem text="Show Diagnosis" press="pressPatientShowDiagnosis"/>
                                                     <MenuItem text="Show Videos" press="pressPatientShowVideos"/>
                                                     <MenuItem text="Show Training programs" press="pressPatientShowTrainingPrograms"/>
-                                                    <MenuItem text="Update details" press="pressPatientUpdateDetails"/>
                                                 </items>
                                             </Menu>
                                         </menu>

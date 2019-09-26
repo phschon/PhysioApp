@@ -1,6 +1,6 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/model/Filter",
+    "sap/ui/model/Filter"
 ], function (Controller, Filter) {
 	"use strict";
 
@@ -24,15 +24,20 @@ sap.ui.define([
         onPatientPressMasterPage: function(oEvent) {
             var oContext = oEvent.getSource().getBindingContext('allUsers');
 			var sPath = oContext.sPath;
+
 			var iStart = sPath.lastIndexOf('/') + 1;
 			var iPatIndex = sPath.substring(iStart, sPath.length);
+
 			this.oRouter.navTo("patientsMasterList", {
-				patIndex: iPatIndex
+				patIdx: iPatIndex
 			});
 		},
 		handleCreateNewPatient: function(oEvent) {
 			this.oRouter.navTo("createPatient");
 		},
+		goBack: function() {
+			this.oRouter.navTo("default");
+		}
 	});
 
 });

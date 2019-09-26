@@ -2,11 +2,10 @@
 	controllerName="sapcp.cf.strongpeople.physioapp.controller.Category" xmlns:html="http://www.w3.org/1999/xhtml">
 	<App>
 		<pages>
-			<Page title="Categories">
+			<Page title="Roles">
 				<content>
-					<List>
-					  <StandardListItem type="Navigation" press="physioCategoryPress" title="Physiotherapist"/>
-					  <StandardListItem type="Active" press="patientCategoryPress" title="Patient"/>
+					<List noDataText="No Data">
+					  <StandardListItem type="Navigation" press="physioCategoryPress" title="{selectedRole>/role}"/>
 					</List>
 				</content>
 			</Page>

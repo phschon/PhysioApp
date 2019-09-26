@@ -11,31 +11,30 @@ sap.ui.define([
             this.oRouter.attachRoutePatternMatched(this._onObjectMatched, this);
         },
         _onObjectMatched: function(oEvent) {
-            this.patIndex = oEvent.getParameter("arguments").patIndex;
-			var oPatientData = this.getOwnerComponent().getModel("allUsers").getProperty("/" + this.patIndex);
-			var oSelectedPatient = new JSONModel(oPatientData);			
-            this.getView().setModel(oSelectedPatient, "selectedPatient");
+			var that = this;
+			this.patIndex = oEvent.getParameter("arguments").patIdx;
+			setTimeout(function() {
+				var oPatientData = that.getOwnerComponent().getModel("allUsers").getProperty("/" + that.patIndex);
+				that.patId = oPatientData.id;
+				var oSelectedPatient = new JSONModel(oPatientData);			
+				that.getView().setModel(oSelectedPatient, "selectedPatient");
+			}, 100);
 		},
 
 		onPatientSearch : function(oEvent) {
 			// add filter for search
 		},
-		showPatientDiagnosis: function(oEvent) {
-			
-		},
-		pressPatientShowDiagnosis: function(oEvent) {
-			
-		},
 		pressPatientShowVideos: function(oEvent) {
 			this.oRouter.navTo("patientVideos", {
-				patIndex: this.patIndex
+				patIdx: this.patIndex,
+				patId: this.patId
 			});
 		},
-		pressPatientUpdateDetails: function(oEvent) {
-			
-		},
 		pressPatientShowTrainingPrograms: function(oEvent) {
-			this.oRouter.navTo("patientPrograms");
+			this.oRouter.navTo("patientPrograms", {
+				patIdx: this.patIndex,
+				patId: this.patId
+			});
 		}
 	});
 });

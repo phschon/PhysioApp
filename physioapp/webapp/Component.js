@@ -29,7 +29,7 @@ sap.ui.define([
 
 			$.ajax({
 				method: "GET",
-				url: "/api/users/",
+				url: "/api/users/patients",
 				dataType: "JSON"
 			}).done(function(oData){
 				var oModel = new JSONModel(oData);
@@ -45,6 +45,17 @@ sap.ui.define([
 			}).done(function(data){
 				var oModel = new JSONModel(data);
 				this.setModel(oModel, "myUser");
+			}.bind(this)).error(function(oError) {
+				console.log(oError);
+			});
+
+			$.ajax({
+				method: "GET",
+				url: "/api/programs",
+				dataType: "JSON"
+			}).done(function(data){
+				var oModel = new JSONModel(data);
+				this.setModel(oModel, "patientPrograms");
 			}.bind(this)).error(function(oError) {
 				console.log(oError);
 			});

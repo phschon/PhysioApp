@@ -1,7 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
 	controllerName="sapcp.cf.strongpeople.physioapp.controller.PatientsMasterList" xmlns:html="http://www.w3.org/1999/xhtml">
 	
-    <Page title="{i18n>pageTitlePatientsMasterList}" showFooter="{device>/isNoPhone}">
+    <Page title="{i18n>pageTitlePatientsMasterList}" showFooter="{device>/isNoPhone}" showNavButton="true" navButtonPress="goBack">
         <subHeader>
             <OverflowToolbar>
                 <SearchField
