@@ -11,16 +11,24 @@
 					<Title level="Auto" text="Profil"/>
 					<ToolbarSpacer width="5%"/>
 				</Toolbar>
-				<opl:ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true">
+				<opl:ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" height="80%">
 					<opl:headerTitle>
-						<opl:ObjectPageHeader objectImageShape="Circle" objectTitle="Matt" objectImageAlt="Senior UI Developer"
-							id="ObjectPageLayoutHeaderTitle" isObjectTitleAlwaysVisible="false" showPlaceholder="true">
-							<opl:actions>
-								<opl:ObjectPageHeaderActionButton icon="sap-icon://pull-down" text="show section" type="Emphasized" tooltip="pull-down"/>
-								<opl:ObjectPageHeaderActionButton icon="sap-icon://show" text="show state" type="Emphasized" tooltip="show"/>
-							</opl:actions>
-						</opl:ObjectPageHeader>
+						<opl:ObjectPageHeader id="headerForTest" objectTitle="Matt Smith" showTitleSelector="true" markChangesPress="handleMarkChangesPress"
+							objectSubtitle="Software Entwickler" objectImageURI="./picture/profil.jpg" objectImageShape="Circle" isObjectTitleAlwaysVisible="false"
+							isObjectSubtitleAlwaysVisible="false" showPlaceholder="true"></opl:ObjectPageHeader>
 					</opl:headerTitle>
+					<opl:headerContent>
+						<layout:VerticalLayout>
+							<Link text="matt"/>
+							<Label text="+49 6221 12345"/>
+							<Link text="Matt@strongpeople.institute"/>
+						</layout:VerticalLayout>
+						<Text width="200px" text="Hallo, ich bin Matt. Mein Motto ist: immer das Beste geben."/>
+						<layout:VerticalLayout>
+							<Label text="Sport Fortschritt"/>
+							<ProgressIndicator percentValue="30" displayValue="30%" showValue="true" state="None"/>
+						</layout:VerticalLayout>
+					</opl:headerContent>
 				</opl:ObjectPageLayout>
 			</Page>
 		</pages>

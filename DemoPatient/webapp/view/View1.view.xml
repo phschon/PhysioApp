@@ -8,15 +8,18 @@
 						<ToolbarSpacer width="5%"/>
 						<Button width="15%" icon="sap-icon://menu2"/>
 						<ToolbarSpacer/>
-						<Title level="Auto" text="Fortschritt"/>
+						<Title level="Auto" text="Mein Fortschritt"/>
 						<ToolbarSpacer/>
 						<Button width="15%" icon="sap-icon://customer" press="onDisplayProfile"/>
 						<ToolbarSpacer width="5%"/>
 					</Toolbar>
 					<content>
+						
+						<Image src="./picture/champion.png" densityAware="false" height="50%"/>
+						
 						<FlexBox>
-							
 							<items>
+								
 								<chart:InteractiveDonutChart selectionChanged="onSelectionChanged">
 									<chart:segments>
 										<chart:InteractiveDonutChartSegment label="Getan" value="40.0" displayedValue="40.0%"/>
@@ -27,7 +30,8 @@
 							</items>
 						</FlexBox>
 						
-						<Image src="https://cdn.pixabay.com/photo/2014/12/21/23/35/trophy-575612_960_720.png" densityAware="false" height="50%"/>
+						<!--<Image src="https://cdn.pixabay.com/photo/2014/12/21/23/35/trophy-575612_960_720.png" densityAware="false" height="50%"/>-->
+						
 					</content>
 					<footer>
 						<OverflowToolbar>
