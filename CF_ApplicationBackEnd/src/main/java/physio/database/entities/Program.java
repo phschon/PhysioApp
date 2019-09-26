@@ -1,6 +1,5 @@
 package physio.database.entities;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Transient;
@@ -33,5 +32,5 @@ public class Program {
 
 	@Transient
 	@JsonInclude(JsonInclude.Include.NON_NULL)
-	private List<Module> module;
+	private List<TrainingModule> module;
 }

@@ -14,7 +14,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-public class Module {
+public class TrainingModule {
 
 	@Id
 	@NotNull

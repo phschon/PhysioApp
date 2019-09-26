@@ -61,7 +61,7 @@ public class DummyContent {
 		fillData("sampledata_exercise_pool.json", ExercisePool.class, exercisePoolRepository);
 
 		// dummy module
-		fillData("sampledata_module.json", Module.class, moduleRepository);
+		fillData("sampledata_module.json", TrainingModule.class, moduleRepository);
 
 		// dummy program
 		fillData("sampledata_program.json", Program.class, programRepository);

@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import physio.database.entities.Exercise;
 import physio.database.entities.ExercisePool;
-import physio.database.entities.Module;
+import physio.database.entities.TrainingModule;
 import physio.database.entities.Program;
 import physio.database.repository.ExerciseRepository;
 import physio.database.repository.ExercisePoolRepository;
@@ -53,10 +53,10 @@ public class ProgramController {
 				.filter(prog -> prog.getPatientId().equals(program)).findFirst();
 		if (first.isPresent()) {
 			Program programWithModules = first.get();
-			LinkedList<Module> modules = new LinkedList<>();
-			moduleRepository.findAll().forEach(modules::add);
-			LinkedList<Module> mods = new LinkedList<>();
-			for (Module mod : modules) {
+			LinkedList<TrainingModule> trainingModules = new LinkedList<>();
+			moduleRepository.findAll().forEach(trainingModules::add);
+			LinkedList<TrainingModule> mods = new LinkedList<>();
+			for (TrainingModule mod : trainingModules) {
 				if (mod.getProgramId().equals(programWithModules.getId())) {
 					LinkedList<Exercise> exercises = new LinkedList<>();
 					exerciseRepository.findAll().forEach(exercises::add);
