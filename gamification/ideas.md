@@ -39,6 +39,6 @@ From time to time, ask the patient how they are feeling. Perhaps ask them how th
 [WzG]: https://github.com/Pranado-gGmbH/PhysioApp/blob/master/gamification/weg_zur_gesundheit.jpg "Path to health and building blocks for a healthy body"
 
 ## References
-[The Psychology Of Gamification](https://www.bitcatcha.com/blog/gamify-website-increase-engagement/ "The Psychology Of Gamification")
-[How To Use Gamification In 2019](https://elearningindustry.com/gamification-in-2019-works-use "How To Use Gamification In 2019")
-[Gamification is Dead](https://www.getopensocial.com/blog/news-room/gamification-is-dead "Gamification is Dead")
+* [The Psychology Of Gamification](https://www.bitcatcha.com/blog/gamify-website-increase-engagement/ "The Psychology Of Gamification")
+* [How To Use Gamification In 2019](https://elearningindustry.com/gamification-in-2019-works-use "How To Use Gamification In 2019")
+* [Gamification is Dead](https://www.getopensocial.com/blog/news-room/gamification-is-dead "Gamification is Dead")
