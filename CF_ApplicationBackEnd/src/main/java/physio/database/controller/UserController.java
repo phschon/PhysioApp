@@ -28,7 +28,7 @@ public class UserController {
 
 	// TODO: this is NOT efficient! Use SQL filtering!
 
-	private static final Log logger = LogFactory.getLog(PhysioConfig.class);
+	private static final Log logger = LogFactory.getLog(UserController.class);
 
 	@Autowired
 	UserRepository userRepository;
@@ -40,7 +40,7 @@ public class UserController {
 	}
 
 	@GetMapping("/users")
-	public ResponseEntity<List<User>> getusers() {
+	public ResponseEntity<List<User>> getUsers() {
 		LinkedList<User> list = new LinkedList<>();
 		userRepository.findAll().forEach(list::add);
 		return new ResponseEntity<>(list, HttpStatus.OK);
@@ -61,7 +61,7 @@ public class UserController {
 		return getusers("Admin");
 	}
 
-	@GetMapping("/users/ownUser")
+	@GetMapping("/users/ownuser")
 	public ResponseEntity<User> getOwnUser(@AuthenticationPrincipal Token token) {
 		// TODO: WTF? This looks stange
 		Optional<User> first = StreamSupport.stream(userRepository.findAll().spliterator(), false).filter(u -> u.getEmail().equals(token.getEmail())).findFirst();
