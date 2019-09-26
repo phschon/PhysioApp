@@ -22,12 +22,6 @@ public interface PhysioApi {
 	@RequestMapping(value = { "/t2p" }, method = RequestMethod.POST)
 	ResponseEntity addTherapist2Patient(@RequestBody Therapist2Patient therapist2Patient);
 
-	@RequestMapping(value = { "/users" }, method = RequestMethod.POST)
-	ResponseEntity addT(@RequestBody User therapist);
-
-	@RequestMapping(value = { "/users" }, method = RequestMethod.GET)
-	ResponseEntity<List<User>> getT();
-
 	@RequestMapping(value = { "/test/{param}" }, method = RequestMethod.GET)
 	ResponseEntity<String> testEndpoint(@AuthenticationPrincipal Token token, @PathVariable String param);
 }

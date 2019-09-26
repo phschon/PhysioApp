@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.sap.cloud.security.xsuaa.token.Token;
 
 import physio.PhysioConfig;
-import physio.database.controller.Therapist2PatientRepository;
-import physio.database.controller.UserRepository;
+import physio.database.repository.Therapist2PatientRepository;
+import physio.database.repository.UserRepository;
 import physio.database.entities.Therapist2Patient;
 import physio.database.entities.User;
 
@@ -27,9 +27,6 @@ public class PhysioApiController implements PhysioApi {
 
 	@Autowired
 	Therapist2PatientRepository therapist2PatientRepository;
-
-	@Autowired
-	UserRepository userRepository;
 
 	private static final Log logger = LogFactory.getLog(PhysioConfig.class);
 
@@ -44,17 +41,6 @@ public class PhysioApiController implements PhysioApi {
 	public ResponseEntity addTherapist2Patient(Therapist2Patient therapist2Patient) {
 		therapist2PatientRepository.save(therapist2Patient);
 		return new ResponseEntity(HttpStatus.CREATED);
-	}
-
-	public ResponseEntity addT(@RequestBody User therapist) {
-		userRepository.save(therapist);
-		return new ResponseEntity(HttpStatus.CREATED);
-	}
-
-	public ResponseEntity<List<User>> getT() {
-		LinkedList<User> list = new LinkedList<>();
-		userRepository.findAll().forEach(list::add);
-		return new ResponseEntity<>(list, HttpStatus.OK);
 	}
 
 	public ResponseEntity<String> testEndpoint(@AuthenticationPrincipal Token token,  String param) {

@@ -1,4 +1,4 @@
-package physio.database.controller;
+package physio.database.repository;
 
 import org.springframework.data.repository.CrudRepository;
 

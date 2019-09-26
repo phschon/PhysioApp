@@ -1,5 +1,6 @@
 package physio.database.entities;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
@@ -11,15 +12,16 @@ import lombok.Setter;
 
 @Getter
 @Setter
+@Entity
 public class Exercise {
 
 	@Id
 	@NotNull
 	private String id;
 
-	@Id
+	//@Id
 	@NotNull
-	@OneToMany(mappedBy="id", targetEntity=User.class)
+	//@OneToMany(mappedBy="id", targetEntity=User.class)
 	private String patientId;
 
 	@NotNull
