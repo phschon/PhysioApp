@@ -1,1 +1,8 @@
 physioapp/node_modules
+CF_ApplicationBackEnd/target/
+CF_ApplicationBackEnd/.classpath
+CF_ApplicationBackEnd/.factorypath
+CF_ApplicationBackEnd/.idea
+CF_ApplicationBackEnd/.project
+CF_ApplicationBackEnd/.settings/
+package-lock.json
