@@ -4,18 +4,22 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("DemoPatient.DemoPatient.controller.MedicalFile", {
-		onInit: function () {
-		},
-		
-		onDisplayTraining: function(Event ) {
+		onInit: function () {},
+
+		onDisplayTraining: function (Event) {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.navTo("training");
-		},		
-		
-		onDisplayProgress: function(Event){
+		},
+
+		onDisplayProfile: function (Event) {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			oRouter.navTo("progress");			
+			oRouter.navTo("profile");
+		},
+
+		onDisplayProgress: function (Event) {
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("progress");
 		}
-		
+
 	});
 });

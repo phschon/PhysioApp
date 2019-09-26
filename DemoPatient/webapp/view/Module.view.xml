@@ -15,7 +15,7 @@
 						<ToolbarSpacer/>
 						<Title level="Auto" text="Trainingseinheit"/>
 						<ToolbarSpacer/>
-						<Button width="15%" icon="sap-icon://customer"/>
+						<Button width="15%" icon="sap-icon://customer" press="onDisplayProfile"/>
 						<ToolbarSpacer width="5%"/>
 					</Toolbar>	
 				

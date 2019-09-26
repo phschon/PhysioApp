@@ -1,0 +1,28 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:opl="sap.uxap"
+	controllerName="DemoPatient.DemoPatient.controller.Profile" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="PhysioApp">
+				<Toolbar>
+					<ToolbarSpacer width="5%"/>
+					<Button icon="sap-icon://nav-back" press="onDisplayTraining"/>
+					<Button width="15%" icon="sap-icon://menu2"/>
+					<ToolbarSpacer/>
+					<Title level="Auto" text="Profil"/>
+					<ToolbarSpacer width="5%"/>
+				</Toolbar>
+				<opl:ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true">
+					<opl:headerTitle>
+						<opl:ObjectPageHeader objectImageShape="Circle" objectTitle="Matt" objectImageAlt="Senior UI Developer"
+							id="ObjectPageLayoutHeaderTitle" isObjectTitleAlwaysVisible="false" showPlaceholder="true">
+							<opl:actions>
+								<opl:ObjectPageHeaderActionButton icon="sap-icon://pull-down" text="show section" type="Emphasized" tooltip="pull-down"/>
+								<opl:ObjectPageHeaderActionButton icon="sap-icon://show" text="show state" type="Emphasized" tooltip="show"/>
+							</opl:actions>
+						</opl:ObjectPageHeader>
+					</opl:headerTitle>
+				</opl:ObjectPageLayout>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -9,7 +9,7 @@
 						<ToolbarSpacer/>
 						<Title level="Auto" text="Trainingsplan"/>
 						<ToolbarSpacer/>
-						<Button width="15%" icon="sap-icon://customer"/>
+						<Button width="15%" icon="sap-icon://customer" press="onDisplayProfile"/>
 						<ToolbarSpacer width="5%"/>
 					</Toolbar>					
 					<content>
@@ -18,7 +18,7 @@
 		binding="{/ProductCollection}" >
 		<StandardListItem
 			title="Heute"
-			description="{0/ProductId}"
+			description="20 min"
 			icon="sap-icon://away"
 			iconDensityAware="false"
 			iconInset="false"

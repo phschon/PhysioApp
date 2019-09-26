@@ -5,29 +5,31 @@ sap.ui.define([
 
 	return Controller.extend("DemoPatient.DemoPatient.controller.View1", {
 		onInit: function () {
-			debugger;
 			$.ajax({
 				method: "GET",
 				url: "/api/programs/",
 				dataType: "JSON"
-			}).done(function(data){
-				debugger;
+			}).done(function (data) {;
 				var oModel = new JSONModel(data);
 				/*this.getOwnerComponent().setModel(oModel, "myUser");*/
-			}.bind(this)).error(function(oError) {
-				debugger;
+			}.bind(this)).error(function (oError) {
 				console.log(oError);
-			});	
+			});
 		},
-		
-		onDisplayTraining: function(Event) {
+
+		onDisplayTraining: function (Event) {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.navTo("training");
 		},
-		
-		onDisplayMedicalFile: function(Event){
+
+		onDisplayProfile: function (Event) {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			oRouter.navTo("medicalFile");			
+			oRouter.navTo("profile");
+		},
+
+		onDisplayMedicalFile: function (Event) {
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("medicalFile");
 		}
 	});
 });

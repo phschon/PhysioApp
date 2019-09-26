@@ -3,17 +3,12 @@ sap.ui.define([
 ], function (Controller) {
 	"use strict";
 
-	return Controller.extend("DemoPatient.DemoPatient.controller.Training", {
+	return Controller.extend("DemoPatient.DemoPatient.controller.Profile", {
 		onInit: function () {},
 
-		onDisplayProgress: function (Event) {
+		onDisplayTraining: function (Event) {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			oRouter.navTo("progress");
-		},
-
-		onDisplayMedicalFile: function (Event) {
-			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			oRouter.navTo("medicalFile");
+			oRouter.navTo("training");
 		},
 
 		onDisplayProfile: function (Event) {
@@ -21,9 +16,10 @@ sap.ui.define([
 			oRouter.navTo("profile");
 		},
 
-		onModuleSelected: function (Event) {
+		onDisplayProgress: function (Event) {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			oRouter.navTo("Module");
+			oRouter.navTo("progress");
 		}
+
 	});
 });

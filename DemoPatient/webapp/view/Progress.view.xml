@@ -9,11 +9,10 @@
 						<ToolbarSpacer/>
 						<Title level="Auto" text="Fortschritt"/>
 						<ToolbarSpacer/>
-						<Button width="15%" icon="sap-icon://customer"/>
+						<Button width="15%" icon="sap-icon://customer" press="onDisplayProfile"/>
 						<ToolbarSpacer width="5%"/>
 					</Toolbar>
-					<content>
-					</content>
+					<content></content>
 					<footer>
 						<OverflowToolbar>
 							<ToolbarSpacer width="5%"/>
@@ -22,9 +21,9 @@
 							<Button width="15%" icon="sap-icon://physical-activity" press="onDisplayTraining"/>
 							<ToolbarSpacer/>
 							<Button width="15%" icon="sap-icon://electronic-medical-record" press="onDisplayMedicalFile"/>
-							<ToolbarSpacer width="5%"/>							
+							<ToolbarSpacer width="5%"/>
 						</OverflowToolbar>
-					</footer>				
+					</footer>
 				</Page>
 			</pages>
 		</App>
