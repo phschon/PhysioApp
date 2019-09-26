@@ -1,18 +1,14 @@
 {
-  "name": "DemoPatient",
-  "version": "0.0.1",
-  "description": "",
-  "private": true,
-  "devDependencies": {
-    "@ui5/cli": "1.7.0",
-    "@sap/ui5-builder-webide-extension": "1.0.5"
-  },
+  "name": "physioapp",
+  "version": "1.0.0",
+  "description": "Phsio App for patients and physiotherapists",
+  "main": "index.js",
   "scripts": {
-    "build": "ui5 build --include-task=generateManifestBundle generateCachebusterInfo"
+    "start": "node node_modules/@sap/approuter/approuter.js"
   },
-  "ui5": {
-    "dependencies": [
-      "@sap/ui5-builder-webide-extension"
-    ]
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/approuter": "^6.4.1"
   }
 }
