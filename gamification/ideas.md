@@ -15,6 +15,7 @@ Imagine a race track or a path the patient has to go to reach the finish: Weg zu
 
 ### Bausteine eine gesunde Körper
 Imagine Lego bricks. For each completed Tagesplan or set of Tagespläne, you get a brick which you can use to complete your healthy body. A similar idea would be to allow the patient to build something creatively and not have a fixed picture that the patient completes. This gives the patient a little room to play.
+
 ![Rennbahn][https://github.com/Pranado-gGmbH/PhysioApp/blob/master/gamification/rennbahn.jpg]
 
 ## Rewards
