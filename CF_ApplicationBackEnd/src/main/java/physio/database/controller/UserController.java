@@ -1,5 +1,6 @@
 package physio.database.controller;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
@@ -19,14 +20,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.sap.cloud.security.xsuaa.token.Token;
 
-import physio.PhysioConfig;
 import physio.database.entities.User;
 import physio.database.repository.UserRepository;
+import physio.error.PhysioExceptionHandler;
+import physio.error.PhysioError;
 
 @RestController
-public class UserController {
+public class UserController extends PhysioExceptionHandler {
 
-	// TODO: this is NOT efficient! Use SQL filtering!
+// TODO: this is NOT efficient! Use SQL filtering!
 
 	private static final Log logger = LogFactory.getLog(UserController.class);
 
@@ -62,15 +64,26 @@ public class UserController {
 	}
 
 	@GetMapping("/users/ownuser")
-	public ResponseEntity<User> getOwnUser(@AuthenticationPrincipal Token token) {
+	public ResponseEntity<User> getOwnUser(@AuthenticationPrincipal Token token) throws PhysioError {
+		if (token == null) {
+			logger.error("TOKEN NULL");
+			throw new PhysioError("No token found.", PhysioError.http_code_bad_request);
+		}
+		logger.info("TOKEN VALUE: " + token.getAppToken());
+		logger.info("TOKEN VALUE: " + tokenString(token));
 		// TODO: WTF? This looks stange
-		Optional<User> first = StreamSupport.stream(userRepository.findAll().spliterator(), false).filter(u -> u.getEmail().equals(token.getEmail())).findFirst();
+		Optional<User> first = StreamSupport.stream(userRepository.findAll().spliterator(), false).filter(u -> u.getEmail().equals(token.getLogonName())).findFirst();
 		return first.map(user -> new ResponseEntity<>(user, HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
 	}
 
 	private ResponseEntity<List<User>> getusers(String role) {
 		// TODO: this is NOT efficient! Use SQL filtering!
-		return new ResponseEntity<>(getusers().getBody().stream().filter(u -> u.getRole().equals(role)).collect(Collectors.toList()), HttpStatus.OK);
+		return new ResponseEntity<>(getUsers().getBody().stream().filter(u -> u.getRole().equals(role)).collect(Collectors.toList()), HttpStatus.OK);
+	}
+
+	private String tokenString(Token token) {
+		return String.format("Authorities: %s, expires: %s, userName: %s, logonName: %s, clientid: %s, givenName: %s, familyName: %s, email: %s, origin: %s, grantType: %s, subaccountId: %s, subdomain; %s, scopes: %s",
+				token.getAuthorities(), token.getExpirationDate() == null ? null: token.getExpirationDate().toString(), token.getUsername(), token.getLogonName(), token.getClientId(), token.getGivenName(), token.getFamilyName(), token.getEmail(), token.getOrigin(), token.getGrantType(), token.getSubaccountId(), token.getSubdomain(), Arrays.toString(token.getScopes().toArray()) );
 	}
 
 }
