@@ -17,11 +17,11 @@ public class Module {
 	private String id;
 
 	@NotNull
-	private String exerciseId;
+	private String programId;
 
 	@NotNull
 	private String date;
 
 	@NotNull
-	private String template;
+	private String description;
 }
