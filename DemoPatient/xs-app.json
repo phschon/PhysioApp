@@ -1,7 +1,12 @@
 { 
     "welcomeFile": "index.html", 
-    "authenticationMethod": "none",
+    "authenticationMethod": "route",
 	"routes": [ 
+		{
+			"source" : "^/media/(.*)$",
+			"target" : "$1",
+			"destination" : "media-share"
+		},
 		{ 
 			"source": "^/(.*)", 
 			"localDir": "webapp" 

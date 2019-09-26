@@ -11,7 +11,11 @@ sap.ui.define([
 		 * @memberOf DemoPatient.DemoPatient.view.Module
 		 */
 		onInit: function () {
-
+		},
+		
+		onDisplayTraining: function(Event){
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("training");		
 		}
 
 		/**

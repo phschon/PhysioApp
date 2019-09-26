@@ -11,5 +11,6 @@ applications:
     env: 
       destinations: >
                     [{
-                      "name": "physio-backend", "url": "https://physiobackend.cfapps.eu10.hana.ondemand.com"
+                      "name": "physio-backend", "url": "https://physiobackend.cfapps.eu10.hana.ondemand.com",
+                      "forwardAuthToken": true
                     }]

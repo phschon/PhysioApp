@@ -1,8 +1,14 @@
 applications:
-  - name: physioAppUI
+  - name: DemoPatientUI
     instances: 1
     memory: 256MB
     buildpacks:
       - nodejs_buildpack
     routes:
-      - route: physioAppUI.cfapps.eu10.hana.ondemand.com
+      - route: DemoPatientUI.cfapps.eu10.hana.ondemand.com
+    env:
+    	destinations: >
+    					[{
+    					"name" : "media-share",
+    					"url" : "https://pranado-my.sharepoint.com/:v:/g/personal/bp_strongpeople_institute/"
+    					}]
