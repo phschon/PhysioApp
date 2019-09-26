@@ -8,7 +8,7 @@ sap.ui.define([
 			debugger;
 			$.ajax({
 				method: "GET",
-				url: "/api/programs/fc2a8fa3-107a-42e3-b94e-f0ed451db208",
+				url: "/api/programs/",
 				dataType: "JSON"
 			}).done(function(data){
 				debugger;
