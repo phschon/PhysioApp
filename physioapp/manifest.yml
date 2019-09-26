@@ -6,3 +6,5 @@ applications:
       - nodejs_buildpack
     routes:
       - route: physioAppUI.cfapps.eu10.hana.ondemand.com
+    services:
+      - physio-xsuaa
