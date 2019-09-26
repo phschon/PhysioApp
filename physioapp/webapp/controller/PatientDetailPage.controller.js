@@ -12,7 +12,7 @@ sap.ui.define([
         },
         _onObjectMatched: function(oEvent) {
             this.patIndex = oEvent.getParameter("arguments").patIndex;
-			var oPatientData = this.getOwnerComponent().getModel("Patients").getProperty('/patients/' + this.patIndex);
+			var oPatientData = this.getOwnerComponent().getModel("allUsers").getProperty("/" + this.patIndex);
 			var oSelectedPatient = new JSONModel(oPatientData);			
             this.getView().setModel(oSelectedPatient, "selectedPatient");
 		},

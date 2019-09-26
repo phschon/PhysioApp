@@ -11,9 +11,10 @@ applications:
     env: 
       destinations: >
                     [{
-                      "name": "physio-backend", "url": "https://physiobackend.cfapps.eu10.hana.ondemand.com",
+                      "name": "physio-backend",
+                      "url": "https://physiobackend.cfapps.eu10.hana.ondemand.com",
                       "forwardAuthToken": true
                     }, {
                       "name" : "media-share",
                       "url" : "https://pranado-my.sharepoint.com/:v:/g/personal/bp_strongpeople_institute/"
-                      }]
+                    }]

@@ -33,7 +33,7 @@ sap.ui.define([
 		},
 		
 		cancelNewPatientDetails: function() {
-			this.oRouter.navTo("actions");
+			this.oRouter.navTo("default");
 		}
 		
 	});
