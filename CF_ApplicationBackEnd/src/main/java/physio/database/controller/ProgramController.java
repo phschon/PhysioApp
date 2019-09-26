@@ -64,21 +64,21 @@ public class ProgramController {
 					for (Exercise ex : exercises) {
 						if(ex.getModuleId().equals(mod.getId())) {
 
-//							Optional<ExercisePool> matchedExerciseFromPool = StreamSupport.stream(exercisePoolRepository.findAll().spliterator(), false)
-//									.filter(exPool -> exPool.getId().equals(ex.getExercisePoolId())).findFirst();
+							Optional<ExercisePool> matchedExerciseFromPool = StreamSupport.stream(exercisePoolRepository.findAll().spliterator(), false)
+									.filter(exPool -> exPool.getId().equals(ex.getExercisePoolId())).findFirst();
 
-							LinkedList<ExercisePool> exercisePools = new LinkedList<>();
-							exercisePoolRepository.findAll().forEach(exercisePools::add);
-//							LinkedList<ExercisePool> exPools = new LinkedList<>();
-							int counter = 0;
-							for (ExercisePool exP : exercisePools) {
-								if (exP.getId().equals(ex.getExercisePoolId())) {
-									logger.warn(counter + " " + ex.getId());
-								}
-								counter++;
-							}
+//							LinkedList<ExercisePool> exercisePools = new LinkedList<>();
+//							exercisePoolRepository.findAll().forEach(exercisePools::add);
+////							LinkedList<ExercisePool> exPools = new LinkedList<>();
+//							int counter = 0;
+//							for (ExercisePool exP : exercisePools) {
+//								if (exP.getId().equals(ex.getExercisePoolId())) {
+//									logger.warn(counter + " " + ex.getId());
+//								}
+//								counter++;
+//							}
 
-//							ex.setExercisePool(matchedExerciseFromPool.get());
+							ex.setExercisePool(matchedExerciseFromPool.get());
 							exer.add(ex);
 						}
 					}
