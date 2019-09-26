@@ -35,10 +35,10 @@
                         <items>
                             <ColumnListItem>
                                 <cells>
-                                    <Text id="PatientId_PatientDetailPage" text="{selectedPatient>/ID}" />
+                                    <Text id="PatientId_PatientDetailPage" text="{selectedPatient>/id}" />
                                     <ObjectIdentifier
-                                        title="{selectedPatient>/Vname}"
-                                        text="{selectedPatient>/Nname}" />
+                                        title="{selectedPatient>/firstName}"
+                                        text="{selectedPatient>/lastName}" />
                                     <Text text="{selectedPatient>/email}" />
                                     <MenuButton text="Actions">
                                         <menu>

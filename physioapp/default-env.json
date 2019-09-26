@@ -37,5 +37,6 @@
     }, {
         "name" : "media-share",
         "url" : "https://pranado-my.sharepoint.com/:v:/g/personal/bp_strongpeople_institute/"
-    }]
+    }],
+    "XS_APP_LOG_LEVEL": "DEBUG"
 }
