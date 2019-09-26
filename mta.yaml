@@ -24,9 +24,20 @@ modules:
           artifacts:
             - './*'
           target-path: resources/physioapp
+        - name: DemoPatient
+          artifacts:
+            - './*'
+          target-path: resources/DemoPatient
   - name: physioapp
     type: html5
     path: physioapp
+    build-parameters:
+      builder: grunt
+      supported-platforms: []
+      build-result: dist
+  - name: DemoPatient
+    type: html5
+    path: DemoPatient
     build-parameters:
       builder: grunt
       supported-platforms: []

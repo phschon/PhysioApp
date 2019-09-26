@@ -1,0 +1,63 @@
+<mvc:View controllerName="DemoPatient.DemoPatient.controller.Training" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<Toolbar>
+						<ToolbarSpacer width="5%"/>
+						<Button width="15%" icon="sap-icon://menu2"/>
+						<ToolbarSpacer/>
+						<Title level="Auto" text="Trainingsplan"/>
+						<ToolbarSpacer/>
+						<Button width="15%" icon="sap-icon://customer"/>
+						<ToolbarSpacer width="5%"/>
+					</Toolbar>					
+					<content>
+			<List
+		headerText="Trainingseinheiten"
+		binding="{/ProductCollection}" >
+		<StandardListItem
+			title="Heute"
+			description="{0/ProductId}"
+			icon="sap-icon://away"
+			iconDensityAware="false"
+			iconInset="false"
+			type="Navigation" />
+		<StandardListItem
+			title="Morgen"
+			description="{1/ProductId}"
+			icon="sap-icon://future"
+			iconDensityAware="false"
+			iconInset="false" />
+		<StandardListItem
+			title="27.09."
+			description="{2/ProductId}"
+			icon="sap-icon://future"
+			iconDensityAware="false"
+			iconInset="false" />
+		<StandardListItem
+			title="20.09."
+			description="{2/ProductId}"
+			icon="sap-icon://past"
+			iconDensityAware="false"
+			iconInset="false"
+			type="Navigation"/>			
+	</List>
+		
+					</content>
+					<footer>
+						<OverflowToolbar>
+							<ToolbarSpacer width="5%"/>
+							<Button width="15%" icon="sap-icon://competitor" press="onDisplayProgress"/>
+							<ToolbarSpacer/>
+							<Button width="15%" icon="sap-icon://physical-activity"/>
+							<ToolbarSpacer/>
+							<Button width="15%" icon="sap-icon://electronic-medical-record" press="onDisplayMedicalFile"/>
+							<ToolbarSpacer width="5%"/>							
+						</OverflowToolbar>
+					</footer>					
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
