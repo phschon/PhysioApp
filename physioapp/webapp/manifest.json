@@ -98,7 +98,15 @@
                         "patientDetailPage",
                         "patientsMasterList"
 					]
-                }
+				},
+				{
+					"name": "patientVideos",
+					"pattern": "patients/{patIndex}/videos",
+					"target": [
+						"patientsMasterList",
+						"patientVideos"
+					]
+				}
 			],
 			"targets": {
                 "patientsMasterList": {
@@ -119,6 +127,12 @@
 					"viewType": "XML",
 					"viewLevel": 0,
 					"viewName": "Welcome",
+					"controlAggregation": "detailPages"
+				},
+				"patientVideos": {
+					"viewType": "XML",
+					"viewLevel": 2,
+					"viewName": "PatientVideos",
 					"controlAggregation": "detailPages"
 				}
 			}
