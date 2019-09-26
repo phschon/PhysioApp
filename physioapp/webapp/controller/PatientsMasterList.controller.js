@@ -22,6 +22,10 @@ sap.ui.define([
 			binding.filter(aFilters, "Application");
         },
         onPatientPressMasterPage: function(oEvent) {
+			var oPatientData = this.getOwnerComponent().getModel("Patients")
+
+
+
             var oContext = oEvent.getSource().getBindingContext('Patients');
 			var sPath = oContext.sPath;
 			var iStart = sPath.lastIndexOf('/') + 1;
