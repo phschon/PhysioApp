@@ -21,6 +21,12 @@ sap.ui.define([
 					return oPatientProgramData.patientId === that.patId;
 				});
 
+				if (oSelectedPatientProgramData.length == 0) {
+					return;
+				}
+
+				that.progId = oSelectedPatientProgramData[0].id;
+
 				var oSelectedProgram = new JSONModel(oSelectedPatientProgramData[0]);
 				that.getView().setModel(oSelectedProgram, "selectedProgram");
 			}, 100);
@@ -31,7 +37,11 @@ sap.ui.define([
 			});
 		},
 		onPatientProgramItemPress: function() {
-
+			this.oRouter.navTo("patientModules", {
+				patIdx: this.patIndex,
+				patId: this.patId,
+				progId: this.progId
+			});
 		}
 	});
 });

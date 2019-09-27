@@ -112,6 +112,22 @@
 					]
 				},
 				{
+					"name": "patientModules",
+					"pattern": "pat/{patIdx}/{patId}/programs/{progId}/modules",
+					"target": [
+						"patientPrograms",
+						"patientModules"
+					]
+				},
+				{
+					"name": "patientExercises",
+					"pattern": "pat/{patIdx}/{patId}/programs/{progId}/exercises",
+					"target": [
+						"patientExercises",
+						"patientModules"
+					]
+				},
+				{
 					"name": "createPatient",
 					"pattern": "/createPatient",
 					"target": [
@@ -157,6 +173,18 @@
 					"viewType": "XML",
 					"viewLevel": 2,
 					"viewName": "PatientPrograms",
+					"controlAggregation": "detailPages"
+				},
+				"patientModules": {
+					"viewType": "XML",
+					"viewLevel": 3,
+					"viewName": "PatientModules",
+					"controlAggregation": "detailPages"
+				},
+				"patientExercises": {
+					"viewType": "XML",
+					"viewLevel": 4,
+					"viewName": "PatientExercises",
 					"controlAggregation": "detailPages"
 				},
 				"createPatient": {

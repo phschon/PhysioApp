@@ -4,7 +4,9 @@
 		<pages>
 			<Page title="Roles">
 				<content>
-					<List noDataText="No Data">
+					<List enableBusyIndicator="true"
+					busyIndicatorDelay="500"
+					noDataText="No data available">
 					  <StandardListItem type="Navigation" press="physioCategoryPress" title="{selectedRole>/role}"/>
 					</List>
 				</content>

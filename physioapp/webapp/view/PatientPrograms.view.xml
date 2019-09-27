@@ -3,7 +3,10 @@
 	
     <Page title="Programs" showNavButton="true" navButtonPress="goBack">
         <content>
-            <List id="patientProgramList">
+            <List id="patientProgramList"
+				enableBusyIndicator="true"
+                busyIndicatorDelay="500"
+		        noDataText="No programs available for Patient">
                 <items>
                     <StandardListItem
                         title="{selectedProgram>/name}"
