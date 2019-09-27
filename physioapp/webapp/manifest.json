@@ -91,13 +91,13 @@
 					"name": "patientsMasterList",
 					"pattern": "pat/{patIdx}",
 					"target": [
-						"patientDetailPage",
-                        "patientsMasterList"
+						"patientsMasterList",
+						"patientDetailPage"
 					]
 				},
 				{
 					"name": "patientVideos",
-					"pattern": "pat/{patIdx}/{patId}/videos",
+					"pattern": "pat/{patIdx}/vid/{patId}",
 					"target": [
 						"patientsMasterList",
 						"patientVideos"
@@ -105,7 +105,7 @@
 				},
 				{
 					"name": "patientPrograms",
-					"pattern": "pat/{patIdx}/{patId}/programs",
+					"pattern": "pat/{patIdx}/prog/{patId}",
 					"target": [
 						"patientsMasterList",
 						"patientPrograms"
@@ -113,7 +113,7 @@
 				},
 				{
 					"name": "patientModules",
-					"pattern": "pat/{patIdx}/{patId}/programs/{progId}/modules",
+					"pattern": "pat/{patIdx}/prog/{patId}/mod/{progId}",
 					"target": [
 						"patientPrograms",
 						"patientModules",
@@ -122,7 +122,7 @@
 				},
 				{
 					"name": "patientExercises",
-					"pattern": "pat/{patIdx}/{patId}/programs/{progId}/modules/exercises",
+					"pattern": "pat/{patIdx}/prog/{patId}/mod/{progId}/exerc",
 					"target": [
 						"patientExercises",
 						"patientModules",
@@ -153,16 +153,22 @@
 					"viewName": "PatientsMasterList",
 					"controlAggregation": "masterPages"
                 },
-                "patientDetailPage": {
-                    "viewType": "XML",
-					"viewLevel": 1,
-					"viewName": "PatientDetailPage",
-					"controlAggregation": "detailPages"
-                },
 				"welcome": {
 					"viewType": "XML",
 					"viewLevel": 0,
 					"viewName": "Welcome",
+					"controlAggregation": "detailPages"
+				},
+				"createPatient": {
+					"viewType": "XML",
+					"viewLevel": 1,
+					"viewName": "CreatePatient",
+					"controlAggregation": "detailPages"
+				},
+				"patientDetailPage": {
+					"viewType": "XML",
+					"viewLevel": 1,
+					"viewName": "PatientDetailPage",
 					"controlAggregation": "detailPages"
 				},
 				"patientVideos": {
@@ -187,12 +193,6 @@
 					"viewType": "XML",
 					"viewLevel": 4,
 					"viewName": "PatientExercises",
-					"controlAggregation": "detailPages"
-				},
-				"createPatient": {
-					"viewType": "XML",
-					"viewLevel": 1,
-					"viewName": "CreatePatient",
 					"controlAggregation": "detailPages"
 				}
 			}

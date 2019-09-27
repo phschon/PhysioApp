@@ -14,7 +14,7 @@ sap.ui.define([
 		physioCategoryPress: function(oEvent) {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.navTo("patientsMasterList", {
-				patIdx: "0"
+				patIdx: 0
 			});
 		},
 		

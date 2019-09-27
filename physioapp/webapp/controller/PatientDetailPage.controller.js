@@ -15,9 +15,12 @@ sap.ui.define([
 			this.patIndex = oEvent.getParameter("arguments").patIdx;
 			setTimeout(function() {
 				var oPatientData = that.getOwnerComponent().getModel("allUsers").getProperty("/" + that.patIndex);
-				that.patId = oPatientData.id;
-				var oSelectedPatient = new JSONModel(oPatientData);			
-				that.getView().setModel(oSelectedPatient, "selectedPatient");
+				
+				if (oPatientData) {
+					that.patId = oPatientData.id;
+					var oSelectedPatient = new JSONModel(oPatientData);			
+					that.getView().setModel(oSelectedPatient, "selectedPatient");
+				}
 			}, 100);
 		},
 
