@@ -10,13 +10,17 @@ sap.ui.define([
 		 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 		 * @memberOf DemoPatient.DemoPatient.view.Module
 		 */
-		onInit: function () {
-		},
-		
-		onDisplayTraining: function(Event){
+		onInit: function () {},
+
+		onDisplayTraining: function (Event) {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			oRouter.navTo("training");		
-		}
+			oRouter.navTo("training");
+		},
+
+		onDisplayProfile: function (Event) {
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("profile");
+		},
 
 		/**
 		 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered

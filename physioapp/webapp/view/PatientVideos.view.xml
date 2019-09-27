@@ -1,25 +1,19 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
 	controllerName="sapcp.cf.strongpeople.physioapp.controller.PatientVideos" xmlns:html="http://www.w3.org/1999/xhtml">
-	<Panel width="auto" class="sapUiResponsiveMargin" accessibleRole="Region">
-		<headerToolbar>
+	
+	<Page title="Videos" showNavButton="true" navButtonPress="goBack">
+		<subHeader>
 			<OverflowToolbar height="3rem">
-				<Title text="Panel with videos"/>
+				<Title text="Liegen und stehen videos"/>
 			</OverflowToolbar>
-		</headerToolbar>
-		<!--<content>-->
-		<!--	<core:HTML-->
-		<!--		content='&lt;video width=&quot;50%&quot; height=&quot;50%&quot; controls&gt;&lt;source src=&quot;{Videos>/videoLinks/0/videoUrl}&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;'>-->
-		<!--	</core:HTML>-->
-		<!--</content>-->
-			<!--<core:HTML-->
-			<!--	content='&lt;video width=&quot;50%&quot; height=&quot;50%&quot; controls&gt;&lt;source src=&quot;{Videos>/videoLinks/1/videoUrl}&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;'>-->
-			<!--</core:HTML>-->
+		</subHeader>
 		<content>
-			<l:HorizontalLayout content="{Videos>/videoLinks}">
+			<l:VerticalLayout content="{Videos>/videoLinks}">
 				<core:HTML
-					content='&lt;video width=&quot;50%&quot; height=&quot;50%&quot; controls&gt;&lt;source src=&quot;{Videos>videoUrl}&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;'>
+					content='&lt;video width=&quot;100%&quot; height=&quot;100%&quot; controls&gt;&lt;source src=&quot;{Videos>videoUrl}&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;'>
 				</core:HTML>
-			</l:HorizontalLayout>
+			</l:VerticalLayout>
 		</content>
-	</Panel>
+			
+	</Page>
 </mvc:View>

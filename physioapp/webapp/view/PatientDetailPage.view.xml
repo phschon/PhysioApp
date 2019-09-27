@@ -35,19 +35,17 @@
                         <items>
                             <ColumnListItem>
                                 <cells>
-                                    <Text id="PatientId_PatientDetailPage" text="{selectedPatient>/ID}" />
+                                    <Text id="PatientId_PatientDetailPage" text="{selectedPatient>/id}" />
                                     <ObjectIdentifier
-                                        title="{selectedPatient>/Vname}"
-                                        text="{selectedPatient>/Nname}" />
+                                        title="{selectedPatient>/firstName}"
+                                        text="{selectedPatient>/lastName}" />
                                     <Text text="{selectedPatient>/email}" />
                                     <MenuButton text="Actions">
                                         <menu>
                                             <Menu itemSelected="onMenuAction">
                                                 <items>
-                                                    <MenuItem text="Show Diagnosis" press="pressPatientShowDiagnosis"/>
                                                     <MenuItem text="Show Videos" press="pressPatientShowVideos"/>
                                                     <MenuItem text="Show Training programs" press="pressPatientShowTrainingPrograms"/>
-                                                    <MenuItem text="Update details" press="pressPatientUpdateDetails"/>
                                                 </items>
                                             </Menu>
                                         </menu>

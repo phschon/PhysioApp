@@ -1,0 +1,36 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:opl="sap.uxap"
+	controllerName="DemoPatient.DemoPatient.controller.Profile" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="PhysioApp">
+				<Toolbar>
+					<ToolbarSpacer width="5%"/>
+					<Button icon="sap-icon://nav-back" press="onDisplayTraining"/>
+					<Button width="15%" icon="sap-icon://menu2"/>
+					<ToolbarSpacer/>
+					<Title level="Auto" text="Mein Profil"/>
+					<ToolbarSpacer width="40%"/>
+				</Toolbar>
+				<opl:ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" height="80%">
+					<opl:headerTitle>
+						<opl:ObjectPageHeader id="headerForTest" objectTitle="Matt Smith" showTitleSelector="true" markChangesPress="handleMarkChangesPress"
+							objectSubtitle="Software Entwickler" objectImageURI="./picture/profil.jpg" objectImageShape="Circle" isObjectTitleAlwaysVisible="false"
+							isObjectSubtitleAlwaysVisible="false" showPlaceholder="true"></opl:ObjectPageHeader>
+					</opl:headerTitle>
+					<opl:headerContent>
+						<layout:VerticalLayout>
+							<Link text="matt"/>
+							<Label text="+49 6221 12345"/>
+							<Link text="Matt@strongpeople.institute"/>
+						</layout:VerticalLayout>
+						<Text width="200px" text="Hallo, ich bin Matt. Mein Motto ist: einfach kann jeder."/>
+						<layout:VerticalLayout>
+							<Label text="Fortschritt Therapie"/>
+							<ProgressIndicator percentValue="40" displayValue="40%" showValue="true" state="None"/>
+						</layout:VerticalLayout>
+					</opl:headerContent>
+				</opl:ObjectPageLayout>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
