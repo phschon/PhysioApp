@@ -38,6 +38,12 @@ From time to time, ask the patient how they are feeling. Perhaps ask them how th
 [Rennbahn]: https://github.com/Pranado-gGmbH/PhysioApp/blob/master/gamification/rennbahn.jpg "Track for life."
 [WzG]: https://github.com/Pranado-gGmbH/PhysioApp/blob/master/gamification/weg_zur_gesundheit.jpg "Path to health and building blocks for a healthy body"
 
+## Story
+We also had the idea of building a story that the patient can get pieces of as they make progress. Think of Zombies Run. This could be hard to implement. You would need the following:
+* A story that appeals to all audiences.
+* A story that is interesting enough that the patient wants to hear more.
+* Enough content to accompany either a long recovery phase or life-long training habits.
+
 ## References
 * [The Psychology Of Gamification](https://www.bitcatcha.com/blog/gamify-website-increase-engagement/ "The Psychology Of Gamification")
 * [How To Use Gamification In 2019](https://elearningindustry.com/gamification-in-2019-works-use "How To Use Gamification In 2019")
