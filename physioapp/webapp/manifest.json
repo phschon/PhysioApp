@@ -116,15 +116,17 @@
 					"pattern": "pat/{patIdx}/{patId}/programs/{progId}/modules",
 					"target": [
 						"patientPrograms",
-						"patientModules"
+						"patientModules",
+						"patientsMasterList"
 					]
 				},
 				{
 					"name": "patientExercises",
-					"pattern": "pat/{patIdx}/{patId}/programs/{progId}/exercises",
+					"pattern": "pat/{patIdx}/{patId}/programs/{progId}/modules/exercises",
 					"target": [
 						"patientExercises",
-						"patientModules"
+						"patientModules",
+						"patientsMasterList"
 					]
 				},
 				{
@@ -148,7 +150,7 @@
                 "patientsMasterList": {
 					"viewType": "XML",
 					"viewLevel": 1,
-					"viewName": "patientsMasterList",
+					"viewName": "PatientsMasterList",
 					"controlAggregation": "masterPages"
                 },
                 "patientDetailPage": {
