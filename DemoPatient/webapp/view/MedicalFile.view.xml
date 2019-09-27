@@ -14,9 +14,9 @@
 						<ToolbarSpacer width="5%"/>
 						<Button width="15%" icon="sap-icon://menu2"/>
 						<ToolbarSpacer/>
-						<Title level="Auto" text="Krankenakte"/>
+						<Title level="Auto" text="Meine Akte"/>
 						<ToolbarSpacer/>
-						<Button width="15%" icon="sap-icon://customer"/>
+						<Button width="15%" icon="sap-icon://customer" press="onDisplayProfile"/>
 						<ToolbarSpacer width="5%"/>
 					</Toolbar>					
 					<content>

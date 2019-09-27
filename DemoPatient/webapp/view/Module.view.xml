@@ -1,42 +1,82 @@
-<mvc:View 
-	xmlns:core="sap.ui.core" 
-	xmlns:mvc="sap.ui.core.mvc" 
-	xmlns:l="sap.ui.layout"
-	xmlns="sap.m" 
-	controllerName="DemoPatient.DemoPatient.controller.Module"
-	xmlns:html="http://www.w3.org/1999/xhtml">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+	controllerName="DemoPatient.DemoPatient.controller.Module" xmlns:html="http://www.w3.org/1999/xhtml">
 	<App>
 		<pages>
 			<Page title="PhysioApp">
-					<Toolbar>
-						<ToolbarSpacer width="5%"/>
-						<Button icon="sap-icon://nav-back" press="onDisplayTraining"/>
-						<Button width="15%" icon="sap-icon://menu2"/>
-						<ToolbarSpacer/>
-						<Title level="Auto" text="Trainingseinheit"/>
-						<ToolbarSpacer/>
-						<Button width="15%" icon="sap-icon://customer"/>
-						<ToolbarSpacer width="5%"/>
-					</Toolbar>	
-				
-					<Toolbar>
-						<Button text="1"/>
-						<Button text="2"/>
-						<Button text="3"/>
-						<Button text="4"/>
-					</Toolbar>
-					
-					<content>
+				<Toolbar>
+					<ToolbarSpacer width="5%"/>
+					<Button icon="sap-icon://nav-back" press="onDisplayTraining"/>
+					<Button width="15%" icon="sap-icon://menu2"/>
+					<ToolbarSpacer/>
+					<Title level="Auto" text="Trainingseinheit"/>
+					<ToolbarSpacer/>
+					<Button width="15%" icon="sap-icon://customer" press="onDisplayProfile"/>
+					<ToolbarSpacer width="5%"/>
+				</Toolbar>
+				<Carousel class="sapUiContentPadding" height="95%">
+					<ScrollContainer height="100%" width="100%" horizontal="false" vertical="true">
 						<l:HorizontalLayout>
 							<core:HTML
-								content='&lt;video width=&quot;500px&quot; height=&quot;400px&quot; controls&gt;&lt;source src=&quot;https://pranado-my.sharepoint.com/:v:/g/personal/bp_strongpeople_institute/Eclj9urerElNu-Z17_uoBHMBKceEBI08Qjr72s1t8dpzMw?e=WGleDO&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;'>
-							</core:HTML>
+								content='&lt;video width=&quot;500px&quot; height=&quot;400px&quot; controls&gt;&lt;source src=&quot;./video/liegen_gummi_bein_gestreckt.mp4&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;'></core:HTML>
 						</l:HorizontalLayout>
-					</content>
+						<f:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3" labelSpanM="4"
+							labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"
+							singleContainerFullSize="false">
+							<f:content>
+								<core:Title text="Liegen Gummi Bein gestreckt"/>
+								<Label/>
+								<l:VerticalLayout>
+								<Text text="1.    Sich auf dem Rücken liegen."/>
+								<Text text="2.    Das Gummiband mit die Hände halten."/>
+								<Text text="3.    Das Gummiband über einen Fuß strecken."/>
+								<Text text="4.    Das Knie hoch heben und dann Bein wieder strecken."/>								
+								</l:VerticalLayout>
+							</f:content>
+						</f:SimpleForm>
+					</ScrollContainer>
+					
+					<ScrollContainer height="100%" width="100%" horizontal="false" vertical="true">
+						<l:HorizontalLayout>
+							<core:HTML
+								content='&lt;video width=&quot;500px&quot; height=&quot;400px&quot; controls&gt;&lt;source src=&quot;./video/liegen_radfahren.mp4&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;'></core:HTML>
+						</l:HorizontalLayout>
+						<f:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3" labelSpanM="4"
+							labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"
+							singleContainerFullSize="false">
+							<f:content>
+								<core:Title text="Liegen Radfahren"/>
+								<Label/>
+								
+								<l:VerticalLayout>
+								<Text text="1.    Sich auf dem Rücken liegen."/>
+								<Text text="2.    Ziehe die Beinen hoch. Unterstützen Sie Ihren Hüfte mit die Hände wenn nötig."/>
+								<Text text="3.    Bewege die Beinen wie einen Fahrrad strampeln."/>								
+								</l:VerticalLayout>								
+							</f:content>
+						</f:SimpleForm>
+					</ScrollContainer>
+					
+					<ScrollContainer height="100%" width="100%" horizontal="false" vertical="true">
+						<l:HorizontalLayout>
+							<core:HTML
+								content='&lt;video width=&quot;500px&quot; height=&quot;400px&quot; controls&gt;&lt;source src=&quot;./video/liegen_seitlich_bein_hoch_und_runter.mp4&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;'></core:HTML>
+						</l:HorizontalLayout>
+						<f:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3" labelSpanM="4"
+							labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"
+							singleContainerFullSize="false">
+							<f:content>
+								<core:Title text="Liegen seitlich Bein hoch und runter"/>
+								<Label/>
+								<l:VerticalLayout>
+								<Text text="1.    Sich in die Seitenlage begeben."/>
+								<Text text="2.    Hebe das Bein leicht hoch."/>
+								<Text text="3.    Bewege das Bein vor und hinten."/>								
+								</l:VerticalLayout>
+							</f:content>
+						</f:SimpleForm>
+					</ScrollContainer>					
+				</Carousel>
 			</Page>
-			
 		</pages>
-		
 	</App>
-	
 </mvc:View>

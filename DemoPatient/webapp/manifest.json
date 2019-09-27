@@ -71,7 +71,10 @@
 				"viewPath": "DemoPatient.DemoPatient.view",
 				"controlAggregation": "pages",
 				"controlId": "app",
-				"clearControlAggregation": false
+				"clearControlAggregation": false,
+				"bypassed": {
+					"target": []
+				}
 			},
 			"routes": [{
 				"name": "training",
@@ -103,6 +106,12 @@
 				"titleTarget": "",
 				"greedy": false,
 				"target": ["Module"]
+			}, {
+				"name": "profile",
+				"pattern": "Profile",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["profile"]
 			}],
 			"targets": {
 				"training": {
@@ -134,6 +143,12 @@
 					"viewName": "Module",
 					"transition": "slide",
 					"clearControlAggregation": false
+				},
+				"profile": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "Profile"
 				}
 			}
 		}

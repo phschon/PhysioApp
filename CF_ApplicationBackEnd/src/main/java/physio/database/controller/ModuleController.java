@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import physio.database.entities.Module;
+import physio.database.entities.TrainingModule;
 import physio.database.repository.ModuleRepository;
 
 @RestController
@@ -19,8 +19,8 @@ public class ModuleController {
 	ModuleRepository moduleRepository;
 
 	@GetMapping("/modules")
-	public ResponseEntity<List<Module>> getModules() {
-		LinkedList<Module> l = new LinkedList<>();
+	public ResponseEntity<List<TrainingModule>> getModules() {
+		LinkedList<TrainingModule> l = new LinkedList<>();
 		moduleRepository.findAll().forEach(l::add);
 		return new ResponseEntity<>(l, HttpStatus.OK);
 	}

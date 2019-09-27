@@ -56,6 +56,10 @@
 				"settings": {
 					"bundleName": "sapcp.cf.strongpeople.physioapp.i18n.i18n"
 				}
+			},
+			"Videos": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/Videos.json"
 			}
 		},
 		"resources": {
@@ -79,35 +83,73 @@
 					"name": "default",
 					"pattern": "",
 					"target": [
-						"patientsMasterList",
+						"category",
 						"welcome"
 					]
-                },
+				},
                 {
 					"name": "patientsMasterList",
-					"pattern": "patients/{patIndex}",
+					"pattern": "pat/{patIdx}",
 					"target": [
-                        "patientDetailPage",
+						"patientDetailPage",
                         "patientsMasterList"
 					]
 				},
 				{
 					"name": "patientVideos",
-					"pattern": "patients/{patIndex}/videos",
+					"pattern": "pat/{patIdx}/{patId}/videos",
 					"target": [
 						"patientsMasterList",
 						"patientVideos"
 					]
+				},
+				{
+					"name": "patientPrograms",
+					"pattern": "pat/{patIdx}/{patId}/programs",
+					"target": [
+						"patientsMasterList",
+						"patientPrograms"
+					]
+				},
+				{
+					"name": "patientModules",
+					"pattern": "pat/{patIdx}/{patId}/programs/{progId}/modules",
+					"target": [
+						"patientPrograms",
+						"patientModules"
+					]
+				},
+				{
+					"name": "patientExercises",
+					"pattern": "pat/{patIdx}/{patId}/programs/{progId}/exercises",
+					"target": [
+						"patientExercises",
+						"patientModules"
+					]
+				},
+				{
+					"name": "createPatient",
+					"pattern": "/createPatient",
+					"target": [
+						"patientsMasterList",
+						"createPatient"
+					]
 				}
 			],
 			"targets": {
-                "patientsMasterList": {
+				"category": {
 					"viewType": "XML",
 					"transition": "slide",
 					"clearControlAggregation": false,
 					"controlAggregation": "masterPages",
-					"viewId": "PatientsMasterList",
-					"viewName": "PatientsMasterList"
+					"viewId": "Category",
+					"viewName": "Category"
+				},
+                "patientsMasterList": {
+					"viewType": "XML",
+					"viewLevel": 1,
+					"viewName": "patientsMasterList",
+					"controlAggregation": "masterPages"
                 },
                 "patientDetailPage": {
                     "viewType": "XML",
@@ -125,6 +167,30 @@
 					"viewType": "XML",
 					"viewLevel": 2,
 					"viewName": "PatientVideos",
+					"controlAggregation": "detailPages"
+				},
+				"patientPrograms": {
+					"viewType": "XML",
+					"viewLevel": 2,
+					"viewName": "PatientPrograms",
+					"controlAggregation": "detailPages"
+				},
+				"patientModules": {
+					"viewType": "XML",
+					"viewLevel": 3,
+					"viewName": "PatientModules",
+					"controlAggregation": "detailPages"
+				},
+				"patientExercises": {
+					"viewType": "XML",
+					"viewLevel": 4,
+					"viewName": "PatientExercises",
+					"controlAggregation": "detailPages"
+				},
+				"createPatient": {
+					"viewType": "XML",
+					"viewLevel": 1,
+					"viewName": "CreatePatient",
 					"controlAggregation": "detailPages"
 				}
 			}
