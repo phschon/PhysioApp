@@ -7,9 +7,9 @@ sap.ui.define([
 		onInit: function () {
 			$.ajax({
 				method: "GET",
-				url: "/api/programs/",
+				url: "/api/programs",
 				dataType: "JSON"
-			}).done(function (data) {;
+			}).done(function (data) {
 				var oModel = new JSONModel(data);
 				/*this.getOwnerComponent().setModel(oModel, "myUser");*/
 			}.bind(this)).error(function (oError) {

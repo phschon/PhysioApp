@@ -1,4 +1,5 @@
-<mvc:View controllerName="DemoPatient.DemoPatient.controller.Progress" xmlns:chart="sap.suite.ui.microchart" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View controllerName="DemoPatient.DemoPatient.controller.Progress" xmlns:chart="sap.suite.ui.microchart" xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
@@ -13,12 +14,13 @@
 						<ToolbarSpacer width="5%"/>
 					</Toolbar>
 					<content>
-						
 						<Image src="./picture/champion.png" densityAware="false" height="50%"/>
-						
+						<l:VerticalLayout class="sapUiContentPadding" width="100%">
+							<Label text="Fortschritt Therapie"/>
+							<ProgressIndicator percentValue="40" displayValue="40%" showValue="true" state="None"/>
+						</l:VerticalLayout>
 						<FlexBox>
 							<items>
-								
 								<chart:InteractiveDonutChart selectionChanged="onSelectionChanged">
 									<chart:segments>
 										<chart:InteractiveDonutChartSegment label="Getan" value="40.0" displayedValue="40.0%"/>
@@ -28,10 +30,7 @@
 								</chart:InteractiveDonutChart>
 							</items>
 						</FlexBox>
-						
 						<!--<Image src="https://cdn.pixabay.com/photo/2014/12/21/23/35/trophy-575612_960_720.png" densityAware="false" height="50%"/>-->
-												
-						
 					</content>
 					<footer>
 						<OverflowToolbar>

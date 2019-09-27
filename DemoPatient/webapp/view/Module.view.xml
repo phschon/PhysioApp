@@ -13,28 +13,58 @@
 					<Button width="15%" icon="sap-icon://customer" press="onDisplayProfile"/>
 					<ToolbarSpacer width="5%"/>
 				</Toolbar>
-				<Toolbar>
-					<Button text="1"/>
-					<Button text="2"/>
-					<Button text="3"/>
-					<Button text="4"/>
-				</Toolbar>
-				<content>
-					<l:HorizontalLayout>
-						<core:HTML
-							content='&lt;video width=&quot;500px&quot; height=&quot;400px&quot; controls&gt;&lt;source src=&quot;https://pranado-my.sharepoint.com/:v:/g/personal/bp_strongpeople_institute/Eclj9urerElNu-Z17_uoBHMBKceEBI08Qjr72s1t8dpzMw?e=WGleDO&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;'></core:HTML>
-					</l:HorizontalLayout>
-					<f:SimpleForm id="SimpleFormDisplay354wideDual" editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3" labelSpanM="4"
-						labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"
-						singleContainerFullSize="false">
-						<f:content>
-							<core:Title text="Übungsname"/>
-							<Label/>
-							<Text
-								text="1. Begebe dich in Bauchlage 2.Stütze dich auf den Ellbogen ab (in gerader Linie unter dem Schultergelenk). Lasse dabei zunächst noch die Knie auf dem Boden und halte den Rücken gerade 4.Strecke dann die Knie durch und halte die Übung. Wichtig ist, dass der Rücken gerade gelassen wird! 5. Halte die Übung für 15 Sekunden Alternativ: Bewege den Körper nun 15 Mal vor und zurück. Bemerkungen: Rücken gerade lassen u für Bauchspannung halten Kontraindikation: keine frische OPs im Ellbogen u Schulterbereich, frischen BSV u Bauch OPs, Entzündungen im Schultergelenk u Ellbogen, frischen Frakturen etc."/>
-						</f:content>
-					</f:SimpleForm>
-				</content>
+				<Carousel class="sapUiContentPadding" height="95%">
+					<ScrollContainer height="100%" width="100%" horizontal="false" vertical="true">
+						<l:HorizontalLayout>
+							<core:HTML
+								content='&lt;video width=&quot;500px&quot; height=&quot;400px&quot; controls&gt;&lt;source src=&quot;https://pranado-my.sharepoint.com/:v:/g/personal/bp_strongpeople_institute/Eclj9urerElNu-Z17_uoBHMBKceEBI08Qjr72s1t8dpzMw?e=WGleDO&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;'></core:HTML>
+						</l:HorizontalLayout>
+						<f:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3" labelSpanM="4"
+							labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"
+							singleContainerFullSize="false">
+							<f:content>
+								<core:Title text="Übungsname"/>
+								<Label/>
+								<Text
+									text="1. Begebe dich in Bauchlage 2.Stütze dich auf den Ellbogen ab (in gerader Linie unter dem Schultergelenk). Lasse dabei zunächst noch die Knie auf dem Boden und halte den Rücken gerade 4.Strecke dann die Knie durch und halte die Übung. Wichtig ist, dass der Rücken gerade gelassen wird! 5. Halte die Übung für 15 Sekunden Alternativ: Bewege den Körper nun 15 Mal vor und zurück. Bemerkungen: Rücken gerade lassen u für Bauchspannung halten Kontraindikation: keine frische OPs im Ellbogen u Schulterbereich, frischen BSV u Bauch OPs, Entzündungen im Schultergelenk u Ellbogen, frischen Frakturen etc."/>
+							</f:content>
+						</f:SimpleForm>
+					</ScrollContainer>
+					
+					<ScrollContainer height="100%" width="100%" horizontal="false" vertical="true">
+						<l:HorizontalLayout>
+							<core:HTML
+								content='&lt;video width=&quot;500px&quot; height=&quot;400px&quot; controls&gt;&lt;source src=&quot;https://pranado-my.sharepoint.com/:v:/g/personal/bp_strongpeople_institute/Eclj9urerElNu-Z17_uoBHMBKceEBI08Qjr72s1t8dpzMw?e=WGleDO&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;'></core:HTML>
+						</l:HorizontalLayout>
+						<f:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3" labelSpanM="4"
+							labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"
+							singleContainerFullSize="false">
+							<f:content>
+								<core:Title text="Übungsname"/>
+								<Label/>
+								<Text
+									text="1. Begebe dich in Bauchlage 2.Stütze dich auf den Ellbogen ab (in gerader Linie unter dem Schultergelenk). Lasse dabei zunächst noch die Knie auf dem Boden und halte den Rücken gerade 4.Strecke dann die Knie durch und halte die Übung. Wichtig ist, dass der Rücken gerade gelassen wird! 5. Halte die Übung für 15 Sekunden Alternativ: Bewege den Körper nun 15 Mal vor und zurück. Bemerkungen: Rücken gerade lassen u für Bauchspannung halten Kontraindikation: keine frische OPs im Ellbogen u Schulterbereich, frischen BSV u Bauch OPs, Entzündungen im Schultergelenk u Ellbogen, frischen Frakturen etc."/>
+							</f:content>
+						</f:SimpleForm>
+					</ScrollContainer>
+					
+					<ScrollContainer height="100%" width="100%" horizontal="false" vertical="true">
+						<l:HorizontalLayout>
+							<core:HTML
+								content='&lt;video width=&quot;500px&quot; height=&quot;400px&quot; controls&gt;&lt;source src=&quot;https://pranado-my.sharepoint.com/:v:/g/personal/bp_strongpeople_institute/Eclj9urerElNu-Z17_uoBHMBKceEBI08Qjr72s1t8dpzMw?e=WGleDO&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;'></core:HTML>
+						</l:HorizontalLayout>
+						<f:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3" labelSpanM="4"
+							labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"
+							singleContainerFullSize="false">
+							<f:content>
+								<core:Title text="Übungsname"/>
+								<Label/>
+								<Text
+									text="1. Begebe dich in Bauchlage 2.Stütze dich auf den Ellbogen ab (in gerader Linie unter dem Schultergelenk). Lasse dabei zunächst noch die Knie auf dem Boden und halte den Rücken gerade 4.Strecke dann die Knie durch und halte die Übung. Wichtig ist, dass der Rücken gerade gelassen wird! 5. Halte die Übung für 15 Sekunden Alternativ: Bewege den Körper nun 15 Mal vor und zurück. Bemerkungen: Rücken gerade lassen u für Bauchspannung halten Kontraindikation: keine frische OPs im Ellbogen u Schulterbereich, frischen BSV u Bauch OPs, Entzündungen im Schultergelenk u Ellbogen, frischen Frakturen etc."/>
+							</f:content>
+						</f:SimpleForm>
+					</ScrollContainer>					
+				</Carousel>
 			</Page>
 		</pages>
 	</App>

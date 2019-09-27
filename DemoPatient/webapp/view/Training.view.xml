@@ -7,7 +7,7 @@
 						<ToolbarSpacer width="5%"/>
 						<Button width="15%" icon="sap-icon://menu2"/>
 						<ToolbarSpacer/>
-						<Title level="Auto" text="Trainingsplan"/>
+						<Title level="Auto" text="Mein Trainingsplan"/>
 						<ToolbarSpacer/>
 						<Button width="15%" icon="sap-icon://customer" press="onDisplayProfile"/>
 						<ToolbarSpacer width="5%"/>
