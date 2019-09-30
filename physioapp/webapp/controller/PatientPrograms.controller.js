@@ -14,6 +14,7 @@ sap.ui.define([
 			var that = this;
 			this.patIndex = oEvent.getParameter("arguments").patIdx;
 			this.patId = oEvent.getParameter("arguments").patId;
+			
 			setTimeout(function() {
 				var aPatientProgramData = that.getOwnerComponent().getModel("patientPrograms").getData();
 				

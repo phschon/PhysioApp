@@ -51,7 +51,7 @@ sap.ui.define([
 
 			$.ajax({
 				method: "GET",
-				url: "/api/programs",
+				url: "/api/programs/",
 				dataType: "JSON"
 			}).done(function(data){
 				var oModel = new JSONModel(data);
